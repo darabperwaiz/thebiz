@@ -6,18 +6,12 @@ import { LuMail } from "react-icons/lu";
 import { FaArrowRightLong } from "react-icons/fa6"
 import Link from "next/link";
 import { Button } from "../Button/Button";
-import { motion } from "framer-motion";
+
 
 const Contact = () => {
   return (
     <div className={style.contact}>
-      <motion.div
-      initial={{ x: 300, opacity: 0 }} // Initial state (offscreen and hidden)
-      whileInView={{ x: 0, opacity: 1 }} // Target state when in view
-      transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and easing
-      viewport={{ once: true, amount: 0.5 }} // Trigger animation once, when 20% of the box is in view
-      
-      className={style.left}>
+      <div className={style.left}>
         <div className={style.topLeft}>
           <p className={style.head}>Contact Us</p>
           <p className={style.title}>
@@ -45,14 +39,8 @@ const Contact = () => {
           </Link>
           <Button text={"Get A Proposal"} />
         </div>
-      </motion.div>
-      <motion.div
-      initial={{ x: -300, opacity: 0 }} // Initial state (offscreen and hidden)
-      whileInView={{ x: 0, opacity: 1 }} // Target state when in view
-      transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and easing
-      viewport={{ once: true, amount: 0.5 }} // Trigger animation once, when 20% of the box is in view
-      
-      className={style.right}>
+      </div>
+      <div className={style.right}>
         <div className={style.rightTop}>
           <p>More About you</p>
           <p>Fill out the contact form and we&apos;ll get in touch with you shortly.</p>
@@ -76,7 +64,7 @@ const Contact = () => {
           <textarea className={style.input} name="" id="" placeholder="Your messages"></textarea>
         </form>
         <button className={style.button}>Schedule Now <span><FaArrowRightLong /></span></button>
-      </motion.div>
+      </div>
     </div>
   );
 };

@@ -4,17 +4,10 @@ import Image from "next/image";
 // import PrimaryButton from "../../../Reusable/PrimaryButton"
 import style from "./banner2.module.css";
 import PrimaryButton from "../primaryButton/PrimaryButton";
-import { motion } from "framer-motion";
 
 const Banner2 = () => {
   return (
-    <motion.div
-      initial={{ x: 200, opacity: 0 }} // Initial state (offscreen and hidden)
-      whileInView={{ x: 0, opacity: 1 }} // Target state when in view
-      transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and easing
-      viewport={{ once: true, amount: 0.5 }} // Trigger animation once, when 20% of the box is in view
-      className={style.banner2}
-    >
+    <div className={style.banner2}>
       <div className={style.gradient}>
         <div className={style.left}>
           <p className={style.title}>
@@ -59,7 +52,7 @@ const Banner2 = () => {
           />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

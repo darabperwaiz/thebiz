@@ -10,7 +10,7 @@ import { FaRegPauseCircle, FaRegPlayCircle } from "react-icons/fa";
 import Image from "next/image";
 import TrustedBrands from "../trustedbrands/TrustedBrands";
 import PrimaryButton from "../primaryButton/PrimaryButton";
-import { motion } from "framer-motion";
+
 
 const Testimonial = () => {
   const vid = useRef(null);
@@ -32,25 +32,13 @@ const Testimonial = () => {
   };
   return (
     <div className={style.testimonial}>
-      <motion.div
-      initial={{ x: -200, opacity: 0 }} // Initial state (offscreen and hidden)
-      whileInView={{ x: 0, opacity: 1 }} // Target state when in view
-      transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and easing
-      viewport={{ once: true, amount: 0.5 }} // Trigger animation once, when 20% of the box is in view
-      
-      className={style.left}>
+      <div className={style.left}>
         <p>Testimonial</p>
         <p>
           What <span>Clients</span> Say About Our Services
         </p>
-      </motion.div>
-      <motion.div
-      initial={{ y: 200, opacity: 0 }} // Initial state (offscreen and hidden)
-      whileInView={{ y: 0, opacity: 1 }} // Target state when in view
-      transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and easing
-      viewport={{ once: true, amount: 0.5 }} // Trigger animation once, when 20% of the box is in view
-      
-      className={style.mid}>
+      </div>
+      <div className={style.mid}>
         <div className={style.outer}>
           <div className={style.inner}>
             <video
@@ -92,15 +80,8 @@ const Testimonial = () => {
             <div className={style.navBar}></div>
           </div>
         </div>
-      </motion.div>
-      <motion.div
-      initial={{ x: 200, opacity: 0 }} // Initial state (offscreen and hidden)
-      whileInView={{ x: 0, opacity: 1 }} // Target state when in view
-      transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and easing
-      viewport={{ once: true, amount: 0.5 }} // Trigger animation once, when 20% of the box is in view
-      
-      
-      className={style.right}>
+      </div>
+      <div className={style.right}>
         <div className={style.rightTop}>
           <Image
             className={style.quote}
@@ -149,7 +130,7 @@ const Testimonial = () => {
         </div>
         <TrustedBrands />
         <PrimaryButton text={"View All reviews"} />
-      </motion.div>
+      </div>
     </div>
   );
 };

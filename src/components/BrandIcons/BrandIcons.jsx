@@ -1,11 +1,10 @@
 import React from "react";
 import style from './brandicons.module.css'
 import Image from "next/image";
-import ScrollAnimationBox from "../ScrollAnimationBox";
 
 const BrandIcons = () => {
   return (
-    <ScrollAnimationBox>
+
     <div className={style.brands}>
       <div className={style.brandIcons}>
         <Image src="/assets/images/brandIcons/logos_shopify.svg" width={100} height={100} alt="" loading="lazy"/>
@@ -22,7 +21,6 @@ const BrandIcons = () => {
         <Image src="/assets/images/brandIcons/Vector.svg" width={100} height={100} alt="" loading="lazy"/>
       </div>
     </div>
-    </ScrollAnimationBox>
   );
 };
 
