@@ -76,9 +76,9 @@ const Porfolios = ({ limit = 6 }) => {
                 <Image
                   src={`/assets/images/porfolioimg/${t.img}`}
                   alt=""
-                  width={200}
-                  height={100}
-                  loading="lazy"
+                  width={500}
+                  height={500}
+                  // loading="lazy"
                 />
               </div>
             )

@@ -1,7 +1,9 @@
+
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+
 
 const robotoSlab = localFont({
   src: "./fonts/RobotoSlab-VariableFont_wght.ttf",

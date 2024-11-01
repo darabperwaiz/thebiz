@@ -1,4 +1,3 @@
-
 import React from "react";
 import style from "./aboutus.module.css";
 import { FaCloudUploadAlt, FaLock } from "react-icons/fa";
