@@ -50,6 +50,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .seo {
+        padding-top: 100px;
+    }
     .seoBottom {
         height: 300px;
     }

@@ -65,7 +65,7 @@ const Header = () => {
   
   return (
     <>
-      <header className={show ? `${style.header} ${activeClass}` : style.header}
+      <header className={show ? `${style.header} ${style.active}` : style.header}
    
 
     >

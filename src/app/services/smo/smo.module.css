@@ -143,3 +143,10 @@
 .chart {
    
 }
+
+
+@media screen and (max-width: 768px) {
+  .smo {
+    padding-top: 100px;
+  }
+}

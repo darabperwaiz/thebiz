@@ -136,3 +136,10 @@
 .text>span {
   font-weight: 600;
 }
+
+
+@media screen and (max-width: 768px) {
+  .webdev {
+    padding-top: 100px;
+  }
+}
