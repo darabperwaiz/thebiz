@@ -33,7 +33,7 @@ const AppDevelopment = () => {
         <div className="container">
             <Benefits>
                 <div className="imgflex">
-                    <img src="/assets/images/tab_dashboard.svg" alt="" width={300} height={300}/>
+                    <Image src="/assets/images/tab_dashboard.svg" alt="" width={300} height={300}/>
                 </div>
             </Benefits>
             <div>

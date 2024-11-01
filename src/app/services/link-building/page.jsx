@@ -6,6 +6,7 @@ import Benefits from "@/components/benefitsWrapper/Benefits"
 import Banner2 from "@/components/Banner2/Banner2"
 import Contact from "@/components/Contact/Contact"
 import Ceo from "@/components/CEO/Ceo"
+import Image from "next/image"
 
 export const metadata = {
   title: "Link Building | Thebiztechnology",
@@ -17,14 +18,14 @@ const LinkBuilding = () => {
   return (
     <>
       <LinkBHeader 
-      title={<>Our Link Building services are the <span>cornerstone</span> of your website's authority and <span>online success.</span></>}
+      title={<>Our Link Building services are the <span>cornerstone</span> of your website&apos;s authority and <span>online success.</span></>}
       description={`Boost your online presence with our expert SEO services. Improve your website's visibility, drive  more customer traffic, and dominate search engine rankings let’s make your business shine in the  digital landscape`}
       />
       <section className={style.bottom}>
         <div className="container">
             <Benefits>
                 <div className="imgflex">
-                    <img src="/assets/images/tab_dashboard.svg" alt="" loading="lazy"/>
+                    <Image src="/assets/images/tab_dashboard.svg" alt="" width={300} height={300}/>
                 </div>
             </Benefits>
             <Banner2 />

@@ -26,8 +26,7 @@ const Hero = () => {
           initial= {{translateY: '700px'}}
           animate = {{translateY: 0}}
           exit={{translateY: '700px'}}
-          className={style.tagline}>
-            "<em><b>Accelerate Your Online Growth,</b></em> Get Your Free Website & Marketing Consultation Today!"
+          className={style.tagline}>&quot;<em><b>Accelerate Your Online Growth,</b></em> Get Your Free Website & Marketing Consultation Today!&quot;
           </motion.p>
           <PrimaryButton text={"Let's talk with me"} />
         </div>

@@ -55,7 +55,7 @@ const Contact = () => {
       className={style.right}>
         <div className={style.rightTop}>
           <p>More About you</p>
-          <p>Fill out the contact form and we'll get in touch with you shortly.</p>
+          <p>Fill out the contact form and we&apos;ll get in touch with you shortly.</p>
         </div>
         <form action="" className="scheduleForm">
           <input className={style.input} type="text" placeholder="Your Name"/>

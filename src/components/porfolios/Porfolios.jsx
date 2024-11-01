@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import style from "./porfolios.module.css";
 import { portfolioData } from "./PortfolioData";
+import Image from "next/image";
 
 
 const Porfolios = ({ limit = 6 }) => {
@@ -72,7 +73,7 @@ const Porfolios = ({ limit = 6 }) => {
           (t, i) =>
             i < limit && (
               <div className={`${style.gridItem} item${i}`} key={i}>
-                <img
+                <Image
                   src={`/assets/images/porfolioimg/${t.img}`}
                   alt=""
                   width={200}

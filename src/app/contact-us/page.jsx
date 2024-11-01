@@ -25,12 +25,12 @@ const ContactUs = () => {
               </p>
             </div>
             <p>
-            We love hearing from other people, whether they're our users or just curious about what we do. If you have any questions about our product or want to give us feedback (good or bad), don't hesitate to get in touch.
+            We love hearing from other people, whether they&apos;re our users or just curious about what we do. If you have any questions about our product or want to give us feedback (good or bad), don&apos;t hesitate to get in touch.
             </p>
           </div>
           <div className={style.mid}>
             <div className={style.midLeft}>
-                <p>Let's Join Forces to Create <span>unique</span> experiences.</p>
+                <p>Let&apos;s Join Forces to Create <span>unique</span> experiences.</p>
                 <p>THUS YOUR BRAND WILL TRANSFORM FROM BLAND TO <span>BUZZWORTHY.</span><br />Our all ears and mind are here for you.</p>
                 <div className={style.address}>
                     <div className={style.addressWrapper}>

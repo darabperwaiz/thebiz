@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './linkbheader.module.css'
+import Image from "next/image"
 
 const LinkBHeader = ({title, description}) => {
   return (
@@ -11,7 +12,7 @@ const LinkBHeader = ({title, description}) => {
             </div>
         </div>
         <div className={style.cornerImage}>
-            <img src="/assets/images/corner.svg" alt="" width={500} height={500}/>
+            <Image src="/assets/images/corner.svg" alt="" width={500} height={500}/>
             {/* <div className={style.rectangle}></div> */}
         </div>
     </section>

@@ -18,7 +18,7 @@ const Gmb = () => {
   return (
     <>
     <LinkBHeader 
-    title={<>Our GMB (Google My Business) services are the cornerstone of your website's authority and local online success.</>}
+    title={<>Our GMB (Google My Business) services are the cornerstone of your website&apos;s authority and local online success.</>}
     description={`Boost your online presence with our expert GMB services. Enhance your local visibility, drive more customer traffic, and stand out in local search results. Let’s make your business shine in the digital landscape.`}
     />
     <section className={style.bottom}>

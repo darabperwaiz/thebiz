@@ -20,7 +20,7 @@ const Seo = () => {
     <>
       <section className={style.seo}>
         <div className="container">
-            <ServiceHeaderWrapper Head={<>A website without <span>SEO</span><br /><span>is same like a car without fuel.</span></>} Des={<>Boost your online presence with our expert SEO services. Improve your website's visibility, drive  more customer traffic, and dominate search engine rankings let’s make your business shine in the  digital landscape</>}>
+            <ServiceHeaderWrapper Head={<>A website without <span>SEO</span><br /><span>is same like a car without fuel.</span></>} Des={<>Boost your online presence with our expert SEO services. Improve your website&apos;s visibility, drive  more customer traffic, and dominate search engine rankings let&apos;s make your business shine in the  digital landscape</>}>
                 <div className={style.seoBottom}>
                     <Image src="/assets/images/google.svg" alt="google" width={20} height={20}/>
                     <Image src="/assets/images/seo_man.webp" alt="man boy" width={600} height={400} quality={100}/>

@@ -29,7 +29,7 @@ const Crm = () => {
             Des={`Revolutionize your customer relationships with our CRM service. Our platform offers a comprehensive suite of tools to streamline sales, marketing, and customer service processes. From lead generation to post-sale support, our intuitive interface and powerful features empower your team to deliver exceptional customer experiences. Gain valuable insights with customizable reporting and analytics, driving informed decision-making and business growth. With seamless integration and robust security, our CRM service is the foundation for building strong, lasting connections with your customers. Elevate your business to new heights with our innovative CRM solution.`}
           >
             <div className={style.crmHeroImg}>
-              <img
+              <Image
                 src="/assets/images/seo_man.webp"
                 width={400}
                 height={600}

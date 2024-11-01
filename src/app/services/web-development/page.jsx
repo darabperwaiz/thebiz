@@ -7,6 +7,7 @@ import Porfolios from "@/components/porfolios/Porfolios";
 import Banner2 from "@/components/Banner2/Banner2";
 import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
+import Image from "next/image";
 
 export const metadata = {
   title: "Web Development | Thebiztechnology",
@@ -30,7 +31,7 @@ const WebsiteDevelopment = () => {
             Des={`Our expert team meticulously crafts tailored websites that embody your brand's essence and drive unparalleled user engagement. From sleek designs to seamless functionality, we ensure every aspect of your site reflects excellence. Whether you're launching a start-up or expanding your digital footprint, we're committed to delivering solutions that exceed expectations.`}
           >
             <div className="imgflex">
-              <img src="/assets/images/website-development/Image.svg" alt="" />
+              <Image src="/assets/images/website-development/Image.svg" alt="" width={300} height={500} />
             </div>
           </ServiceHeaderWrapper>
         </div>
@@ -39,7 +40,7 @@ const WebsiteDevelopment = () => {
         <div className="container">
           <Benefits>
           <div className="imgflex">
-              <img src="/assets/images/website-development/image2.svg" alt="" />
+              <Image src="/assets/images/website-development/image2.svg" alt="" width={300} height={300}/>
             </div>
           </Benefits>
           <div>

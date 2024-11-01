@@ -6,6 +6,7 @@ import Benefits from "@/components/benefitsWrapper/Benefits";
 import Banner2 from "@/components/Banner2/Banner2";
 import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
+import Image from "next/image";
 
 export const metadata = {
   title: "Website Annual Maintenance | Thebiztechnology",
@@ -28,7 +29,7 @@ const WebsiteMaintanence = () => {
             Des={`Boost your online presence with our expert SEO services. Improve your website's visibility, drive  more customer traffic, and dominate search engine rankings let’s make your business shine in the  digital landscape`}
           >
             <div className="imgflex">
-              <img
+              <Image
                 src="/assets/images/annual-maintenence/girl.svg"
                 alt=""
                 width={400}
@@ -42,7 +43,7 @@ const WebsiteMaintanence = () => {
         <div className="container">
           <Benefits>
             <div >
-              <img src="/assets/images/annual-maintenence/man.svg" alt="" width={300} height={300}/>
+              <Image src="/assets/images/annual-maintenence/man.svg" alt="" width={300} height={300}/>
             </div>
           </Benefits>
           <Banner2 />

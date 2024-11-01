@@ -27,7 +27,7 @@ const About = () => {
         viewport={{once: true, amount: 0.2 }} // Trigger animation once, when 20% of the box is in view
         className={style.right}>
         <Image src="/assets/images/quoteLeft.svg" width={40} height={40} alt="" />
-            <p className={style.description}>The Biz Technology, our mission is clear: to provide you with cutting-edge insights, trends, and innovations in the dynamicrealm of business and technology. Whether you're an experienced entrepreneur, aburgeoning start-up, or simply passionate about tech, innovations in the dynamicrealm of business and technology. our platform is meticulously crafted to equip you with indispensable knowledge.our platform is meticulously crafted to equip you with indispensable knowledge.</p>
+            <p className={style.description}>The Biz Technology, our mission is clear: to provide you with cutting-edge insights, trends, and innovations in the dynamicrealm of business and technology. Whether you&apos;re an experienced entrepreneur, aburgeoning start-up, or simply passionate about tech, innovations in the dynamicrealm of business and technology. our platform is meticulously crafted to equip you with indispensable knowledge.our platform is meticulously crafted to equip you with indispensable knowledge.</p>
             <div className={style.rightBottom}>
                 <Button text={"Know More"} />
                 <Image src="/assets/images/quoteRight.svg" width={40} height={40} alt="" />

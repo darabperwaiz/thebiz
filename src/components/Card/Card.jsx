@@ -4,6 +4,7 @@ import { BsPlusLg } from "react-icons/bs";
 import { BsDashLg } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { LearnMoreBtn } from "../learnMoreBtn/LearnMoreBtn";
+import Image from "next/image";
 
 export const Card = ({data, index}) => {
     const [isActive, setIsActive] = useState(false)
@@ -22,7 +23,7 @@ export const Card = ({data, index}) => {
   return (
     <div className={style.card}>
       <div className={style.cardLeft}>
-        <img className={style.icons} src={`/assets/images/serviceIcons/${data.src}`} alt="" width={25} height={25} />
+        <Image className={style.icons} src={`/assets/images/serviceIcons/${data.src}`} alt="" width={25} height={25} />
         <p>{data.title}</p>
       </div>
       <div className={isActive? `${style.hide} ${style.cardRight}` : `${style.hide}`}>
