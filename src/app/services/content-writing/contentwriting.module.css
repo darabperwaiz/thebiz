@@ -1,0 +1,56 @@
+.contentWriting {
+    padding-top: 180px;
+    background-color: #F2F4FB;
+}
+
+
+.row {
+    display: flex;
+    flex: 33.33%;
+    gap: 15px;justify-content: flex-end;
+}
+
+.column1, .column2, .column3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: clamp(5.313rem, 4.3636rem + 4.0506vw, 6.875rem);
+}
+
+.column1>img:nth-child(1), .column1>img:nth-child(2), .column2>img:nth-child(1), .column2>img:nth-child(2), .column3>img:nth-child(1) {
+    border-radius: 45px;
+} 
+
+.column1>img:nth-child(1) {
+    background-color: #6e1fed;
+}
+
+.column1>img:nth-child(2) {
+    background-color: #db2a6b;
+}
+
+.column2>img:nth-child(1) {
+    background-color: #60d3d9;
+}
+
+.column2>img:nth-child(2) {
+    background-color: #ff7e29;
+}
+
+.column3 {
+    justify-content: center;
+}
+
+.column3>img:nth-child(1) {
+    background-color: #f4b840;
+}
+
+.mid {
+    background-image: url('/assets/images/vector.svg');
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    background-position: 0 50px;
+}
+
+
+

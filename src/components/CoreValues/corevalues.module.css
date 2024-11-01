@@ -1,0 +1,28 @@
+.coreValues {
+    display: flex;
+    flex-direction:  column;
+    gap: 48px;
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: clamp(3.125rem, 2.3375rem + 3.5000vw, 4rem);
+}
+
+.title>span {
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    padding: 0 10px;
+    gap: 90px;
+}
+
+.left, .right {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

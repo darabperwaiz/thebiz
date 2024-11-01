@@ -1,0 +1,44 @@
+import style from "./card.module.css";
+import { HiOutlinePlus } from "react-icons/hi2";
+import { BsPlusLg } from "react-icons/bs";
+import { BsDashLg } from "react-icons/bs";
+import { useEffect, useState } from "react";
+import { LearnMoreBtn } from "../learnMoreBtn/LearnMoreBtn";
+
+export const Card = ({data, index}) => {
+    const [isActive, setIsActive] = useState(false)
+    const handleClick = () => {
+        setIsActive((prev)=> !prev)
+    }
+
+    useEffect(() => {
+        if(index===2) {
+            setIsActive(true)
+        }
+        // return () => {
+            
+        // };
+    }, []);
+  return (
+    <div className={style.card}>
+      <div className={style.cardLeft}>
+        <img className={style.icons} src={`/assets/images/serviceIcons/${data.src}`} alt="" width={25} height={25} />
+        <p>{data.title}</p>
+      </div>
+      <div className={isActive? `${style.hide} ${style.cardRight}` : `${style.hide}`}>
+        <div className={isActive ? `${style.hide} ${style.cardRightLeft}` : `${style.hide}`}>
+          <p>
+            {data.description}
+          </p>
+          <LearnMoreBtn text={"learn more"} url={"#"} color={"blue"} />
+        </div>
+        
+      </div>
+      <div className={style.cardToggleBtn} onClick={handleClick}>
+        {/*  */}
+        {isActive ? <BsDashLg style={{color: "#707070"}}/> : <BsPlusLg style={{color: "#4285F4"}}/>}
+          
+        </div>
+    </div>
+  );
+};

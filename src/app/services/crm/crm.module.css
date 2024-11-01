@@ -1,0 +1,28 @@
+.crm {
+    padding-top: 180px;
+    background: #F2F4FB;
+}
+
+.bottom {
+    background: url('/assets/images/vector.svg') no-repeat;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+.crmHeroImg {
+    overflow: hidden;
+    height: 500px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .crmHeroImg {
+        height: 332px;
+        overflow: hidden;
+    }
+
+    .crmImg {
+        height: 400px;
+        width: 300px;
+    }
+}

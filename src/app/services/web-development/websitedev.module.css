@@ -1,0 +1,138 @@
+.webdev {
+  padding-top: 180px;
+  background-color: #f2f4fb;
+}
+
+.inner {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.inner > img {
+  z-index: 1;
+}
+
+.box {
+  height: 100px;
+  width: 100%;
+  border-radius: 60px;
+  position: absolute;
+}
+
+.box1 {
+  top: 50px;
+  left: -30px;
+  background-color: #c6abff;
+}
+
+.box2 {
+  top: 55%;
+  transform: translateY(-50%);
+  background-color: #f6a081;
+}
+
+.box3 {
+  bottom: 0;
+  left: -30px;
+  background-color: #f3b634;
+}
+
+.bottom {
+    padding-top: 100px;
+}
+
+.bottomInner {
+  position: relative;
+  /* background-color: red; */
+}
+
+.bottomInner > img:nth-child(2) {
+  position: absolute;
+  width: 400px;
+  left: 0px;
+  bottom: 19px;
+  clip-path: path(
+    "M205.642 0.0461417C233.281 1.1575 249.498 32.5084 275.288 42.5082C307.535 55.0112 350.529 40.77 374.635 65.5704C398.082 89.6921 393.257 129.507 392.541 163.139C391.836 196.266 385.181 228.617 370.533 258.338C355.234 289.379 337.205 321.871 306.47 337.777C276.052 353.519 239.082 351.08 205.642 343.672C175.756 337.052 155.838 310.18 127.681 298.173C94.4414 283.998 49.8726 293.917 25.7907 266.976C1.94173 240.296 -6.86394 196.139 6.9769 163.139C21.2984 128.992 69.7971 126.037 95.912 99.7856C113.361 82.2459 114.378 53.415 132.686 36.7741C153.183 18.1437 177.966 -1.06672 205.642 0.0461417Z"
+  );
+}
+
+.userInfo {
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  padding: 13.578px;
+  border-radius: 13.578px;
+  background: #f4f3f8;
+  box-shadow: 0px 13.578px 28.287px 0px rgba(0, 0, 0, 0.15);
+  gap: 9px;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail>p:nth-child(1) {
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.detail>p:nth-child(2) {
+    color: var(--secodry-color);
+    font-size: 10px;
+    font-weight: 400;
+
+}
+
+
+.iconBox {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+}
+
+.userInfo1 {
+    top: 45px;
+    left: -5px;
+}
+
+.userInfo1 .iconBox {
+    background-color: #2d46be;
+}
+
+.userInfo2 .iconBox {
+    background-color: #2D46BE;
+}
+
+
+.userInfo2 {
+    bottom: 0px;
+    right: 30px;
+}
+
+.userInfo3 {
+    top: 80px;
+    right: -30px;
+}
+
+
+.text {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 64px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.text>span {
+  font-weight: 600;
+}

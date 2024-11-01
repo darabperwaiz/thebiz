@@ -1,0 +1,29 @@
+.submenu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(236, 236, 236, 0.556);
+    width: 100%;
+    color: var(--primary-color);
+    height: 0px;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.submenuItem {
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 15px 0px 15px 20px;
+    color: var(--primary-color);
+}
+
+.submenuItem:not(:last-of-type) {
+    border-bottom: 1px solid #04040418;
+}
+
+
+.active {
+   height: 100%;
+   visibility: visible;
+}
+
+

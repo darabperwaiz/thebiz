@@ -1,0 +1,25 @@
+.outcome {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+}
+
+.outcome>p {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.outcome>p>span {
+    font-weight: 700;
+}
+
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 4px;
+
+}

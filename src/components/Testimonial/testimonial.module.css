@@ -1,0 +1,276 @@
+.testimonial {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.left {
+    width: 185%;
+}
+
+.left>p:nth-child(1) {
+    color: var(--secondry-button-color);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.left>p:nth-child(2) {
+    color: var(--primary-color);
+    font-size: clamp(2.5rem, 1.1500rem + 6.0000vw, 4rem);
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    text-transform: capitalize;
+}
+
+.left>p:nth-child(2)>span {
+    font-weight: 700;
+}
+
+.outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 242.823px;
+    background-color: #535353;
+    height: 500.488px;
+    border-radius: 40.712px;
+    border: 0.594px solid #1f2321;
+    padding: 1px;
+    -webkit-box-shadow: inset 0 0 4px 1px #000;
+    box-shadow: inset 0 0 4px 1px #000;
+}
+
+.inner {
+    position: relative;
+    width: 235.698px;
+    height: 492.77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36.912px;
+    background-color: #000000;
+    border: 4.375px solid #121212;
+    overflow: hidden;
+}
+
+.controls {
+    position: absolute;
+    background-color: #00000094;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    font-size: 50px;
+    color: #fff;
+    transition: all 0.1s ease-in-out;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.speaker {
+    font-size: 30px;
+}
+
+
+.inner:hover .controls {
+    visibility: visible;
+}
+
+/* .clientVideo {
+    width: 100%;
+    height: 100%;
+} */
+
+/* .female {
+    width: 130%;
+    height: 109%;
+    border-radius: 30px;
+} */
+
+.dIsland {
+    width: 80px;
+    height: 20px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 40px;
+    top: 10px;
+}
+
+.notification {
+    width: 4px;
+    height: 4px;
+    background-color: greenyellow;
+    position: absolute;
+    right: 25px;
+    top: 8px;
+    border-radius: 50%;
+}
+
+.camera {
+    width: 14px;
+    height: 14px;
+    background-color: purple;
+    position: absolute;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 3px;
+    background-color: #ffffff21;
+    border-radius: 50%;
+}
+
+.cameraOuter {
+    width: 7px;
+    height: 7px;
+    background-color: rgba(6, 13, 159, 0.221);
+    border-radius: 50%;
+    position: relative;
+}
+
+.cameraInner {
+    width: 3px;
+    height: 3px;
+    background-color: #ffffff2b;
+    position: absolute;
+    border-radius: 50%;
+    left: 2.5px;
+    top: 1px;
+
+}
+
+.icons {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    display: flex;
+    color: #fff;
+    gap: 3px;
+    font-size: 14px;
+}
+
+.clock {
+    position: absolute;
+    left: 15px;
+    font-size: 13px;
+    top: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navBar {
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    bottom: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.play {
+    position: absolute;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.quote {
+    width: 20px;
+}
+
+.rightTop {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rightTop>p {
+    color: var(--secodry-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.rightMid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rightMid>img {
+    align-self: flex-end;
+}
+
+.midMid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ceo {
+    display: flex;
+    gap: 8px;
+}
+
+.markImg {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+}
+
+.label>p:nth-child(1) {
+    color: var(--primary-button-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.label>p:nth-child(2) {
+    color: var(--secodry-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 992px) {
+    .testimonial {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .right {
+        width: 100%;
+        
+    }
+
+    .midMid {
+        justify-content: center;
+        gap: 18px;
+    }
+}

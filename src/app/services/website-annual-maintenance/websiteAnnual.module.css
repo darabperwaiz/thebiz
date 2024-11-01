@@ -1,0 +1,10 @@
+.annual {
+    padding-top: 180px;
+    background: #F2F4FB;
+}
+
+.bottom {
+    background: url('/assets/images/vector.svg') no-repeat;
+    padding-top: 100px;
+    margin-top: 50px;
+}
