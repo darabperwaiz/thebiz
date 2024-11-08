@@ -8,6 +8,7 @@ import Ceo from "@/components/CEO/Ceo"
 import ServiceHeaderWrapper from "@/components/ServiceHeaderWrapper/ServiceHeaderWrapper"
 import Benefits from "@/components/benefitsWrapper/Benefits"
 import Outcome from "@/components/outcome/Outcome"
+import Seopackage from "@/components/SeoPackage/Seopackage"
 
 export const metadata = {
   title: "SEO | Thebiztechnology",
@@ -35,9 +36,7 @@ const Seo = () => {
                     <Image src="/assets/images/tab_dashboard.svg" alt="tab_dashboard" width={300} height={300}/>
                 </div>
             </Benefits>
-            <div className={style.packages}>
-                Coming Soon!
-            </div>
+            <Seopackage />
             <Outcome />
             <Banner2 />
             <Contact />

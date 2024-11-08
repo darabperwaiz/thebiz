@@ -7,7 +7,6 @@ const Roadmap = () => {
   useEffect(()=> {
     const handleScroll = () => {
       const elements = document.querySelectorAll(`.${style.timelineBox}`)
-      console.log(elements)
 
       elements.forEach((el)=> {
         const rect = el.getBoundingClientRect()
