@@ -56,7 +56,7 @@ const Roadmap = () => {
                 <p>Implemetation</p>
               </div>
               <div className={style.timelineBoxDes}>
-                <p>We begin by understanding your organization's digitally needs, challenges, and goals through an initial consultation. This helps us tailor our services to your specific requirements.</p>
+                <p>We begin by understanding your organization&apos;s digitally needs, challenges, and goals through an initial consultation. This helps us tailor our services to your specific requirements.</p>
               </div>
             </div>
             <div className={style.timelineBox}>
