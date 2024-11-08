@@ -5,11 +5,11 @@ import CollapseTable from "../CollapseTable/CollapseTable";
 
 const MainTable = ({title}) => {
   return (
-    <>
+    <div className={style.tableGap}>
       <table className={style.PackageTable}>
         {/* Row 1 */}
         <tr className={style.row}>
-          <td>{title}</td>
+          <td data-label="Package">{title}</td>
           <td>
             <p>
               225 <span>$/Mo</span>
@@ -37,55 +37,55 @@ const MainTable = ({title}) => {
         </tr>
         {/* Row 2 */}
         <tr className={style.row}>
-          <td>Keyword Plan</td>
-          <td>
+          <td data-label="Package">Keyword Plan</td>
+          <td data-label="Startup">
             <span>Upto 25</span>
           </td>
-          <td>
+          <td data-label="Growth">
             <span>Upto 25</span>
           </td>
-          <td>
+          <td data-label="Premium">
             <span>Upto 25</span>
           </td>
-          <td>
+          <td data-label="High Value">
             <span>Upto 25</span>
           </td>
         </tr>
         {/* Row 3 */}
         <tr className={style.row}>
-          <td>Keywords Top 10 Guarantee(%)*</td>
-          <td>
+          <td data-label="Package">Keywords Top 10 Guarantee(%)*</td>
+          <td  data-label="Startup">
             <span>25</span>
           </td>
-          <td>
+          <td data-label="Growth">
             <span>25</span>
           </td>
-          <td>
+          <td data-label="Premium">
             <span>25</span>
           </td>
-          <td>
+          <td data-label="High Value">
             <span>25</span>
           </td>
         </tr>
         {/* Row 4 */}
         <tr className={style.row}>
           <td></td>
-          <td>
+          <td data-label="Startup">
             <Link href="/" className={style.LinkBtn}>
               Get Started
             </Link>
           </td>
-          <td>
+          <td data-label="Growth">
             <Link href="/" className={style.LinkBtn}>
               Get Started
             </Link>
           </td>
-          <td>
+          <td data-label="Premium">
             <Link href="/" className={style.LinkBtn}>
               Get Started
             </Link>
           </td>
-          <td>
+          <td data-label="High Value">
             <Link href="/" className={style.LinkBtn}>
               Get Started
             </Link>
@@ -95,7 +95,7 @@ const MainTable = ({title}) => {
       <CollapseTable />
       <CollapseTable />
       <CollapseTable />
-    </>
+    </div>
   );
 };
 

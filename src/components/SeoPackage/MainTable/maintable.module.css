@@ -1,3 +1,9 @@
+.tableGap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .PackageTable {
     width: 100%;
     border-collapse: collapse;
@@ -75,6 +81,44 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .PackageTable, 
+    .PackageTable tr, 
+    .PackageTable td {
+      display: block;
+      width: 100%;
+    }
+  
+    .PackageTable tr {
+      margin-bottom: 15px;
+    }
+  
+    .PackageTable td {
+      text-align: left;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .PackageTable td:before {
+      content: attr(data-label);
+      position: absolute;
+      right: 10px;
+      /* font-weight: bold; */
+      text-transform: uppercase;
+    }
+
+    .row td:not(:nth-child(1)) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+  }
+
+
 
 
 
