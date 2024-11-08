@@ -18,7 +18,7 @@ const MenuItem = ({menus, setIsActive}) => {
                 <MenuDropdown submenu={menus.submenu} dropdown={isDropdown} setIsActive={setIsActive}/>
             </>
         ) : (
-            <a className={style.item}  href={menus.url} onClick={()=> setIsActive(false)}>{menus.title}</a>
+            <a className={style.item}  href={`/${menus.url}`} onClick={()=> setIsActive(false)}>{menus.title}</a>
         )
     }
       
