@@ -14,6 +14,7 @@ import Banner2 from "@/components/Banner2/Banner2";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
+import Roadmap from "@/components/Roadmap/Roadmap";
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
       </section>
       <section>
         <div className="container">
+          <Roadmap />
             <Testimonial />
             <Contact />
             <Ceo />
