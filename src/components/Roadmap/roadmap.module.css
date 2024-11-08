@@ -159,3 +159,17 @@
     }
 
 }
+
+@media screen and (max-width: 480px) {
+    .timelineBox:nth-child(2n + 1)::after,  .timelineBox:nth-child(2n)::after{
+        left: -63px;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timelineBox:nth-child(2n + 1)::after,  .timelineBox:nth-child(2n)::after{
+        left: -64px;
+        
+    }
+}
