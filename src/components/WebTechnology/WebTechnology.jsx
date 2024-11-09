@@ -37,6 +37,7 @@ const WebTechnology = () => {
                     whileInView={{opacity: 1, x: 0}}
                     exit={{opacity:0, x:100}}
                     transition={{duration: 0.5}}
+                    viewport={{once: true}}
                     className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} onClick={()=> handleClick(item, index)} >{item.tag}</motion.li>
                 ))}
             </motion.ul>
