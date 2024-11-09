@@ -68,5 +68,6 @@
 
   .mid {
     gap: 6px;
+    transition: none;
   }
 }

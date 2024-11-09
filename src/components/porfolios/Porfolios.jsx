@@ -74,7 +74,7 @@ const Porfolios = ({ limit = 6 }) => {
         whileInView={{opacity: 1, x: 0}}
         transition={{duration: 0.3}}
         exit={{opacity: 0, x: 100}}
-        viewport={{once: false}}
+        viewport={{once: true}}
         className={style.mid}>
           {projects.map(
             (t, i) =>

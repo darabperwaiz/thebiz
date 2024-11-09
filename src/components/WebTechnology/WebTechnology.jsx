@@ -33,10 +33,10 @@ const WebTechnology = () => {
                 {webTechData.map((item, index)=> (
                     <motion.li
                     key={index}
-                    initial={{opacity: 0, y: -100}}
-                    whileInView={{opacity: 1, y: 0}}
+                    initial={{opacity: 0, x: -100}}
+                    whileInView={{opacity: 1, x: 0}}
                     exit={{opacity:0, x:100}}
-                    transition={{duration: 0.7}}
+                    transition={{duration: 0.5}}
                     className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} onClick={()=> handleClick(item, index)} >{item.tag}</motion.li>
                 ))}
             </motion.ul>
