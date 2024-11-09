@@ -1,94 +1,38 @@
 import React, { useEffect } from 'react'
 import style from './roadmap.module.css'
-import { MdFlight } from "react-icons/md"
+import Image from "next/image"
+import HoverIcon from "./HoverIcon/HoverIcon"
+// import { MdFlight } from "react-icons/md"
 
 const Roadmap = () => {
-
-  useEffect(()=> {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll(`.${style.timelineBox}`)
-
-      elements.forEach((el)=> {
-        const rect = el.getBoundingClientRect()
-        const windowHeight = window.innerHeight
-
-        const isHalfVisible = rect.top >= 0 && rect.bottom <= windowHeight;
-
-        if(isHalfVisible ) {
-          el.classList.add(style.visible)
-        }
-        else {
-          el.classList.remove(style.visible)
-        }
-      })
-    }
-
-    window.addEventListener("scroll", handleScroll)
-
-    handleScroll()
-
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
   return (
-    <div className={style.Roadmap}>
-      <p className={style.title}>Development <br/><span>Roadmap</span></p>
-    <section className={style.timeline}>
-            <div className={style.timelineBox}>
-              <div className={style.timelineBoxHead}>
-                <p>Consulation & Assisment</p>
-              </div>
-              <div className={style.timelineBoxDes}>
-                <p>our platform is meticulously crafted to equip you with indispensable knowledge.</p>
-              </div>
+    <div className={style.roadmap}>
+      <div className={style.title}>
+        <p>Development</p>
+        <p>Roadmap</p>
+      </div>
+      <div className={style.bottom}>
+            <Image src="/assets/images/brandIcons/curve_rainbow.png" alt="" width={400} height={300}/>
+            <div className={style.icon1}>
+            <HoverIcon p1="Consulation & Assistment" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="focus.svg" bgColor="#FFE3E1"/>
             </div>
-            <div className={style.timelineBox}>
-              <div className={style.timelineBoxHead}>
-                <p>Analysis & Planning</p>
-              </div>
-              <div className={style.timelineBoxDes}>
-                <p>our platform is meticulously crafted to equip you with indispensable knowledge.</p>
-              </div>
+            <div className={style.icon2}>
+            <HoverIcon p1="Analysis & Planning" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="YelloLine.svg" bgColor="#FFEFD3"/>
             </div>
-            <div className={style.timelineBox}>
-              <div className={style.timelineBoxHead}>
-                <p>Implemetation</p>
-              </div>
-              <div className={style.timelineBoxDes}>
-                <p>We begin by understanding your organization&apos;s digitally needs, challenges, and goals through an initial consultation. This helps us tailor our services to your specific requirements.</p>
-              </div>
+            <div className={style.icon3}>
+            <HoverIcon p1="Implementation" p2="We begin by understanding your organization&apos;s digitally needs, challenges, and goals through an initial consultation. This helps us tailor our services to your specific requirements." icon="handshake.svg" bgColor="#FFF5D8"/>
             </div>
-            <div className={style.timelineBox}>
-              <div className={style.timelineBoxHead}>
-                Quality Testing
-              </div>
-              <div className={style.timelineBoxDes}>
-                <p>our platform is meticulously crafted to equip you with indispensable knowledge.</p>
-              </div>
+            <div className={style.icon4}>
+            <HoverIcon p1="Quality Testing" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="verified.svg" bgColor="#EDFFD8"/>
             </div>
-            <div className={style.timelineBox}>
-              <div className={style.timelineBoxHead}>
-                CMS Training
-              </div>
-              <div className={style.timelineBoxDes}>
-                <p>our platform is meticulously crafted to equip you with indispensable knowledge.</p>
-              </div>
+            <div className={style.icon5}>
+            <HoverIcon p1="CMS Training" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="tips.svg" bgColor="#DEECFF"/>
             </div>
-            <div className={style.timelineBox}>
-              <div className={style.timelineBoxHead}>
-                Support & Maintenance
-              </div>
-              <div className={style.timelineBoxDes}>
-                <p>our platform is meticulously crafted to equip you with indispensable knowledge.</p>
-              </div>
+            <div className={style.icon6}>
+            <HoverIcon p1="Support & Maintenance" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="purple.svg" bgColor="#FAE7FF"/>
             </div>
-            <div className={style.timelineDivider}>
-              <div className={style.timeTraveller}>
-              <MdFlight />
-              </div>
-            </div>
-          </section>
-          </div>
+      </div>
+    </div>
   )
 }
 
