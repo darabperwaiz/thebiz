@@ -26,9 +26,9 @@ const Footer = () => {
               <Image src="/assets/images/logo.webp" width={126} height={88} alt="" />
             </motion.div>
             <motion.p
-            initial={{opacity: 0, x: -200}}
+            initial={{opacity: 0, x: -100}}
             whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -200}}
+            exit={{opacity: 0, x: -100}}
             transition={{duration: 0.5}}
             className={style.paragraph}>
               It is a long established fact that a reader will be distracted by
@@ -36,25 +36,25 @@ const Footer = () => {
             </motion.p>
             <div className={style.socialIcons}>
               <motion.div
-              initial={{opacity: 0, x: -200}}
+              initial={{opacity: 0, x: -50}}
               whileInView={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: 200}}
+              exit={{opacity: 0, x: 50}}
               transition={{delay: 0.6, duration: 0.5}}
               className={style.icon}>
                 <FaFacebookF style={{ color: "#4285F4" }} />
               </motion.div>
               <motion.div
-              initial={{opacity: 0, x: -200}}
+              initial={{opacity: 0, x: -100}}
               whileInView={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: 200}}
+              exit={{opacity: 0, x: 100}}
               transition={{delay: 0.4, duration: 0.5}}
               className={style.icon}>
                 <FaTwitter style={{ color: "#229BF2" }} />
               </motion.div>
               <motion.div
-              initial={{opacity: 0, x: -200}}
+              initial={{opacity: 0, x: -100}}
               whileInView={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: 200}}
+              exit={{opacity: 0, x: 100}}
               transition={{delay: 0.2, duration: 0.5}}
               className={style.icon}>
                 <div className={style.insta}>
@@ -69,9 +69,9 @@ const Footer = () => {
                 </div>
               </motion.div>
               <motion.div
-              initial={{opacity: 0, x: -200}}
+              initial={{opacity: 0, x: -100}}
               whileInView={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: 200}}
+              exit={{opacity: 0, x: 100}}
               transition={{duration: 0.5}}
               className={style.icon}>
                 <FaYoutube style={{ color: "#D80027" }} />
@@ -79,9 +79,9 @@ const Footer = () => {
             </div>
           </div>
           <motion.div
-          initial={{opacity: 0, y: -200}}
+          initial={{opacity: 0, y: -100}}
           whileInView={{opacity: 1, y: 0}}
-          exit={{opacity: 0, y: 200}}
+          exit={{opacity: 0, y: 100}}
           transition={{duration: 0.5}}
           className={style.quickLinks}>
             <p>Quick Links</p>
@@ -95,9 +95,9 @@ const Footer = () => {
             </div>
           </motion.div>
           <motion.div
-          initial={{opacity: 0, y: -200}}
+          initial={{opacity: 0, y: -100}}
           whileInView={{opacity: 1, y: 0}}
-          exit={{opacity: 0, y: 200}}
+          exit={{opacity: 0, y: 100}}
           transition={{delay: 0.2, duration: 0.5}}
           className={style.quickLinks}>
             <p>Hire Dedicated Expert</p>
@@ -110,7 +110,7 @@ const Footer = () => {
           <motion.div
           initial={{opacity: 0, y: -200}}
           whileInView={{opacity: 1, y: 0}}
-          exit={{opacity: 0, y: 300}}
+          exit={{opacity: 0, y: 200}}
           transition={{delay: 0.4, duration: 0.5}}
           className={style.quickLinks}>
             <p>Our Offices</p>
