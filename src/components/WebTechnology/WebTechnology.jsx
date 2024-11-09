@@ -5,6 +5,7 @@ import style from './webtechnology.module.css'
 import { webTechData } from "./webTechData"
 import { LearnMoreBtn } from "../learnMoreBtn/LearnMoreBtn"
 import Image from "next/image"
+import { AnimatePresence, motion } from "framer-motion"
 
 
 const WebTechnology = () => {
@@ -16,27 +17,46 @@ const WebTechnology = () => {
     }
 
   return (
+    <AnimatePresence mode="wait">
     <div className={style.technology}>
       <div className={style.top}>
-        <p><b>Web</b> Technology</p>
+        <motion.p
+        initial={{opacity: 0, x: 200}}
+        whileInView={{opacity: 1, x: 0}}
+        transition={{ duration: 0.7}}
+        
+        ><b>Web</b> Technology</motion.p>
       </div>
       <div className={style.bottom}>
         <div className={style.left}>
-            <ul className={style.items}>
+            <motion.ul className={style.items}>
                 {webTechData.map((item, index)=> (
-                    <li className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} key={index} onClick={()=> handleClick(item, index)} >{item.tag}</li>
+                    <motion.li
+                    key={index}
+                    initial={{opacity: 0, y: -100}}
+                    whileInView={{opacity: 1, y: 0}}
+                    exit={{opacity:0, x:100}}
+                    transition={{duration: 0.7}}
+                    className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} onClick={()=> handleClick(item, index)} >{item.tag}</motion.li>
                 ))}
-            </ul>
+            </motion.ul>
         </div>
-        <div className={style.right}>
+        <motion.div 
+        key={singleData.id}
+        initial={{ y: 50, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        exit={{y: -60, opacity:0}}
+        transition={{duration: 0.5}}
+        className={style.right}>
              <Image src={`/assets/images/brandIcons/${singleData.src}`} width={100} height={100} alt="new" loading="lazy"/>
              <div>
              <p>{singleData.description}</p>   
             <LearnMoreBtn text={"learn more"} url={"#"} color={"orange"}/>
              </div>
-        </div>
+        </motion.div>
       </div>
     </div>
+    </AnimatePresence>
   )
 }
 

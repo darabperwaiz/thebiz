@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import React, { useMemo, useState } from "react";
 import style from "./porfolios.module.css";
 import { portfolioData } from "./PortfolioData";
 import Image from "next/image";
-
+import { AnimatePresence, motion } from "framer-motion";
 
 const Porfolios = ({ limit = 6 }) => {
   const [category, setCategory] = useState("");
@@ -68,22 +68,38 @@ const Porfolios = ({ limit = 6 }) => {
           UI/UX
         </p>
       </div>
-      <div className={style.mid}>
-        {projects.map(
-          (t, i) =>
-            i < limit && (
-              <div className={`${style.gridItem} item${i}`} key={i}>
-                <Image
-                  src={`/assets/images/porfolioimg/${t.img}`}
-                  alt=""
-                  width={500}
-                  height={500}
-                  // loading="lazy"
-                />
-              </div>
-            )
-        )}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+        initial={{opacity: 0, y: 300}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.5}}
+        exit={{opacity: 0, y: -300}}
+        viewport={{once: true}}
+        className={style.mid}>
+          {projects.map(
+            (t, i) =>
+              i < limit && (
+                <motion.div
+                  key={t.id}
+                  initial={{ opacity: 0, x: 300 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -300 }}
+                  transition={{duration: 0.5 }}
+                  className={`${style.gridItem} item${i}`}
+                
+                >
+                  <Image
+                    src={`/assets/images/porfolioimg/${t.img}`}
+                    alt=""
+                    width={500}
+                    height={500}
+                    // loading="lazy"
+                  />
+                </motion.div>
+              )
+          )}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

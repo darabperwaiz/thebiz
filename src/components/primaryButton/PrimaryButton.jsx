@@ -1,14 +1,22 @@
-import React from 'react'
+import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import style from './PrimaryButton.module.css'
-
-const PrimaryButton = ({text}) => {
+import style from "./PrimaryButton.module.css";
+import { motion } from "framer-motion";
+const PrimaryButton = ({ text }) => {
   return (
-    <button className={style.button}>
+    <motion.button
+      initial={{ visibility: "hidden", x: -300 }}
+      whileInView={{ visibility: "visible", x: 0 }}
+      exit={{ x: 300 }}
+      transition={{ duration: 0.5 }}
+      className={style.button}
+    >
       <span>{text}</span>
-      <span><FaArrowRightLong /></span>
-    </button>
-  )
-}
+      <span>
+        <FaArrowRightLong />
+      </span>
+    </motion.button>
+  );
+};
 
-export default PrimaryButton
+export default PrimaryButton;
