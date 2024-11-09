@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 const PrimaryButton = ({ text }) => {
   return (
     <motion.button
-      initial={{ visibility: "hidden", x: -300 }}
-      whileInView={{ visibility: "visible", x: 0 }}
-      exit={{ x: 300 }}
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      exit={{ x: 200 }}
       transition={{ duration: 0.5 }}
       className={style.button}
     >

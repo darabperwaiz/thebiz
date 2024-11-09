@@ -6,12 +6,19 @@ import { LuMail } from "react-icons/lu";
 import { FaArrowRightLong } from "react-icons/fa6"
 import Link from "next/link";
 import { Button } from "../Button/Button";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 const Contact = () => {
   return (
+    <AnimatePresence>
     <div className={style.contact}>
-      <div className={style.left}>
+      <motion.div
+      initial={{opacity: 0, x: 300}}
+      whileInView={{opacity: 1, x: 0}}
+      exit={{opacity: 0, x: -300}}
+      transition={{duration: 0.5}}
+      className={style.left}>
         <div className={style.topLeft}>
           <p className={style.head}>Contact Us</p>
           <p className={style.title}>
@@ -39,8 +46,13 @@ const Contact = () => {
           </Link>
           <Button text={"Get A Proposal"} />
         </div>
-      </div>
-      <div className={style.right}>
+      </motion.div>
+      <motion.div
+      initial={{opacity: 0, x: -300}}
+      whileInView={{opacity: 1, x: 0}}
+      exit={{opacity: 0, x: 300}}
+      transition={{duration: 0.5}}
+      className={style.right}>
         <div className={style.rightTop}>
           <p>More About you</p>
           <p>Fill out the contact form and we&apos;ll get in touch with you shortly.</p>
@@ -64,8 +76,9 @@ const Contact = () => {
           <textarea className={style.input} name="" id="" placeholder="Your messages"></textarea>
         </form>
         <button className={style.button}>Schedule Now <span><FaArrowRightLong /></span></button>
-      </div>
+      </motion.div>
     </div>
+    </AnimatePresence>
   );
 };
 

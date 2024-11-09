@@ -10,6 +10,7 @@ import { FaRegPauseCircle, FaRegPlayCircle } from "react-icons/fa";
 import Image from "next/image";
 import TrustedBrands from "../trustedbrands/TrustedBrands";
 import PrimaryButton from "../primaryButton/PrimaryButton";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 const Testimonial = () => {
@@ -31,14 +32,25 @@ const Testimonial = () => {
     }
   };
   return (
+    <AnimatePresence>
     <div className={style.testimonial}>
-      <div className={style.left}>
+      <motion.div
+      initial={{opacity: 0, x: -300}}
+      whileInView={{opacity: 1, x: 0}}
+      exit={{opacity: 0, x: -300}}
+      transition={{duration: 0.5}}
+      className={style.left}>
         <p>Testimonial</p>
         <p>
           What <span>Clients</span> Say About Our Services
         </p>
-      </div>
-      <div className={style.mid}>
+      </motion.div>
+      <motion.div
+      initial={{opacity: 0, y: 100}}
+      whileInView={{opacity: 1, y: 0}}
+      exit={{opacity: 0, y: -200}}
+      transition={{duration: 0.5}}
+      className={style.mid}>
         <div className={style.outer}>
           <div className={style.inner}>
             <video
@@ -80,8 +92,13 @@ const Testimonial = () => {
             <div className={style.navBar}></div>
           </div>
         </div>
-      </div>
-      <div className={style.right}>
+      </motion.div>
+      <motion.div
+      initial={{opacity: 0, x: 300}}
+      whileInView={{opacity: 1, x: 0}}
+      exit={{opacity: 0, x: 300}}
+      transition={{duration: 0.5}}
+      className={style.right}>
         <div className={style.rightTop}>
           <Image
             className={style.quote}
@@ -130,8 +147,9 @@ const Testimonial = () => {
         </div>
         <TrustedBrands />
         <PrimaryButton text={"View All reviews"} />
-      </div>
+      </motion.div>
     </div>
+    </AnimatePresence>
   );
 };
 

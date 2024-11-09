@@ -4,34 +4,72 @@ import React from 'react'
 import style from './ceo.module.css'
 import Image from "next/image"
 import { LearnMoreBtn } from "../learnMoreBtn/LearnMoreBtn"
+import { AnimatePresence, motion } from "framer-motion"
 
 
 const Ceo = () => {
   return (
+    <AnimatePresence>
     <div className={style.ceo}>
       <div className={style.left}>
-        <div className={style.curve}></div>
-        <div className={style.ceoImage}>
+        <motion.div
+        initial={{opacity: 0, rotate: 45}}
+        whileInView={{opacity: 1, rotate: 0}}
+        exit={{opacity: 0, rotate: 45}}
+        transition={{duration: 0.5}}
+        className={style.curve}></motion.div>
+        <motion.div
+        initial={{opacity: 0, scale: 0}}
+        whileInView={{opacity: 1, scale: 1}}
+        exit={{opacity: 0, scale: 0}}
+        transition={{duration: 0.5}}        
+        className={style.ceoImage}>
             <Image src="/assets/images/ceo_image.webp" width={210} height={300} alt="" />
-        </div>
+        </motion.div>
         <div className={style.leftLeft}>
             <div className={style.title}>
-                <p>KAMRAN</p>
-                <p>ASHRAF</p>
+                <motion.p
+                initial={{opacity: 0, rotate: 45}}
+                whileInView={{opacity: 1, rotate: 0}}
+                exit={{opacity: 0, rotate: 45}}
+                transition={{duration: 0.5}}
+                >KAMRAN</motion.p>
+                <motion.p
+                initial={{opacity: 0, rotate: -45}}
+                whileInView={{opacity: 1, rotate: 0}}
+                exit={{opacity: 0, rotate: -45}}
+                transition={{duration: 0.5}}
+                >ASHRAF</motion.p>
             </div>
-            <p>Founder and CEO</p>
+            <motion.p
+            initial={{opacity: 0, x: 100}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 100}}
+            transition={{duration: 0.5}}
+            >Founder and CEO</motion.p>
         </div>
       </div>
       <div className={style.right}>
-        <p>A Message From CEO</p>
-        <div className={style.mid}>
+        <motion.p
+        initial={{opacity: 0, x: 50}}
+        whileInView={{opacity: 1, x: 0}}
+        exit={{opacity: 0, x: 50}}
+        transition={{duration: 0.5}}
+        >A Message From CEO</motion.p>
+        <motion.div 
+        initial={{opacity: 0, x: 50}}
+        whileInView={{opacity: 1, x: 0}}
+        exit={{opacity: 0, x: 50}}
+        transition={{duration: 0.5}}
+        className={style.mid}>
             <Image className={style.quote} src="/assets/images/quoteLeft.svg" width={31} height={31} alt="" />
             <p>The Biz Technology, our mission is clear  to provide you with cutting-edge insights, trends, and innovations in the dynamicrealm of business.</p>
-        </div>
+        </motion.div>
         <Image className={style.quote} src="/assets/images/quoteRight.svg" alt="" width={31} height={31} />
         <LearnMoreBtn text={"learn more"} url={'#'} color={'blue'} />
       </div>
     </div>
+    </AnimatePresence>
   )
 }
 

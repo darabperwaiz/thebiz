@@ -7,6 +7,8 @@ import PrimaryButton from "@/components/primaryButton/PrimaryButton";
 import Image from "next/image";
 import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
+import { AnimatePresence, motion } from "framer-motion";
+import Motion from "@/components/Motion/Motion";
 
 export const metadata = {
   title: "About Us | Thebiztechnology",
@@ -18,19 +20,34 @@ const AboutUs = () => {
 
   return (
     < >
+    <AnimatePresence>
       <div className={style.aboutHero}>
         <div className="container">
           <div className={style.wrapper}>
             <div className={style.head}>
+              <Motion
+              initial={{opacity: 0, x: 200}}
+              whileInView={{opacity: 1, x: 0}}
+              exit={{opacity: 0, x: -200}}
+              transition={{duration: 0.5}}
+              >
               <p className={style.title}>
                 welcome to <span>the biz technology</span> company
               </p>
+              </Motion>
+              <Motion
+              initial={{opacity: 0, x: -200}}
+              whileInView={{opacity: 1, x: 0}}
+              exit={{opacity: 0, x: 200}}
+              transition={{duration: 0.5}}
+              >
               <p className={style.des}>
                 your trusted partner for internet marketing and website
                 services. Specializing in delivering tailored solutions, we
                 empower businesses to enhance their online presence and drive
                 growth
               </p>
+              </Motion>
             </div>
             <TrustedBrands />
             <PrimaryButton text={"Let's talk with me"} />
@@ -40,6 +57,12 @@ const AboutUs = () => {
       <section>
         <div className="container">
           <div className={style.top}>
+            <Motion
+            initial={{opacity: 0, x: -200}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 200}}
+            transition={{duration: 0.5}}
+            >
             <div className={style.topLeft}>
               <p className={style.topLefttitle}>
                 The design subscription that <span>connects</span> you
@@ -54,7 +77,14 @@ const AboutUs = () => {
                 audience.
               </p>
             </div>
+            </Motion>
             <div className={style.topRight}>
+              <Motion
+              initial={{opacity: 0, y: 200}}
+              whileInView={{opacity: 1, y: 0}}
+              exit={{opacity: 0, y: 200}}
+              transition={{duration: 0.5}}
+              >
               <div className={style.topRightLeft}>
                 <div className={style.imageWrapper}>
                   <Image
@@ -76,6 +106,13 @@ const AboutUs = () => {
                   />
                 </div>
               </div>
+              </Motion>
+              <Motion
+              initial={{opacity: 0, y: -200}}
+              whileInView={{opacity: 1, y: 0}}
+              exit={{opacity: 0, y: -200}}
+              transition={{duration: 0.5}}
+              >
               <div className={style.topRightMid}>
                 <div className={style.imageWrapper}>
                   <Image
@@ -98,6 +135,13 @@ const AboutUs = () => {
                   />
                 </div>
               </div>
+              </Motion>
+              <Motion
+              initial={{opacity: 0, x: 100}}
+              whileInView={{opacity: 1, x: 0}}
+              exit={{opacity: 0, x: -100}}
+              transition={{duration: 0.5}}
+              >
               <div className={style.topRightRight}>
                 <div className={style.imageWrapper}>
                   <Image
@@ -110,9 +154,16 @@ const AboutUs = () => {
                   />
                 </div>
               </div>
+              </Motion>
             </div>
           </div>
           <div className={style.mid}>
+            <Motion
+            initial={{opacity: 0, x: -200}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -200}}
+            transition={{duration: 0.5}}
+            >
             <div className={style.midLeft}>
               <Image
                 src="/assets/images/group_of_people.webp"
@@ -123,6 +174,13 @@ const AboutUs = () => {
                 
               />
             </div>
+            </Motion>
+            <Motion
+            initial={{opacity: 0, x: 200}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 200}}
+            transition={{duration: 0.5}}
+            >
             <div className={style.midRight}>
               <p className={style.midRightTitle}>
                 The design <span>subscription</span> thats connects you.
@@ -137,13 +195,27 @@ const AboutUs = () => {
                 audience.
               </p>
             </div>
+            </Motion>
           </div>
           <div className={style.bottom}>
+            <Motion
+            initial={{opacity: 0, y: -200}}
+            whileInView={{opacity: 1, y: 0}}
+            exit={{opacity: 0, y: -200}}
+            transition={{duration: 0.5}}
+            >
             <div className={style.bottomLeft}>
               <p className={style.bottomTitle}>
                 The design <span>subscription</span> that connects you.
               </p>
             </div>
+            </Motion>
+            <Motion
+            initial={{opacity: 0, x: -200}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -200}}
+            transition={{duration: 0.5}}
+            >
             <div className={style.bottomRight}>
               <div className={style.bottomRightBox}>
                 <FaCloudUploadAlt style={{color: 'var(--secondry-button-color)',marginTop: '6px', minWidth: '20px'}}/>
@@ -182,6 +254,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
+            </Motion>
           </div>
         </div>
       </section>
@@ -191,6 +264,7 @@ const AboutUs = () => {
         <Ceo />
       </div>
       </section>
+      </AnimatePresence>
     </>
   );
 };

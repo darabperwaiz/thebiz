@@ -6,10 +6,18 @@ import google from '../../../public/assets/images/google.svg'
 import yellowStar from '../../../public/assets/images/yellostar.svg'
 import halfYellow from '../../../public/assets/images/halfYellow.svg'
 import Image from "next/image";
+import Motion from "../Motion/Motion";
+import { delay } from "framer-motion";
 
 const TrustedBrands = () => {
   return (
     <div className={style.right}>
+      <Motion
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0 }}
+      transition={{ duration: 0.5 }}
+      >
         <div className={style.trustpilot}>
           <div className={style.trustpilotHead}>
             <Image src={GreenStar} alt="green star" />
@@ -36,6 +44,13 @@ const TrustedBrands = () => {
             <p>Rated 4.5/5.0</p>
           </div>
         </div>
+        </Motion>
+        <Motion
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0 }}
+        transition={{delay: 0.2, duration: 0.5 }}
+        >
         <div className={style.google}>
           <div className={style.gLeft}>
             <Image src={google} alt="google" />
@@ -53,9 +68,17 @@ const TrustedBrands = () => {
             <p>4.7</p>
           </div>
         </div>
+        </Motion>
+        <Motion
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0 }}
+        transition={{delay: 0.4, duration: 0.5 }}
+        >
         <div className={style.clutch}>
           <Image src="/assets/images/clutch.webp" width={100} height={50} alt="" loading="lazy"/>
         </div>
+        </Motion>
       </div>
   )
 }

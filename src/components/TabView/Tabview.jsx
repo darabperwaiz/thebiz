@@ -26,7 +26,7 @@ const Tabview = () => {
       <motion.div
       key="tab1"
       initial={{opacity: 0, x: 300}}
-      animate={{opacity: 1, x: 0}}
+      whileInView={{opacity: 1, x: 0}}
       exit={{opacity: 0, x: 300}}
       transition={{duration: 0.5}}
       // className={toggleState===1 ? `${style.content} ${style.contentVisible}` : `${style.content}`}
@@ -41,7 +41,7 @@ const Tabview = () => {
       <motion.div
       key="tab2"
       initial={{opacity: 0, x: -300}}
-      animate={{opacity: 1, x: 0}}
+      whileInView={{opacity: 1, x: 0}}
       exit={{opacity: 0, x: -300}}
       transition={{duration: 0.5}}
       // className={toggleState===1 ? `${style.content} ${style.contentVisible}` : `${style.content}`}

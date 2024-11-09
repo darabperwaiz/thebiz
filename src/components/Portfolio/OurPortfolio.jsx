@@ -2,15 +2,22 @@
 import style from './ourportfolio.module.css'
 import PrimaryButton from "../primaryButton/PrimaryButton"
 import Porfolios from "../porfolios/Porfolios"
+import { AnimatePresence, motion } from "framer-motion"
 
 
 const OurPortfolio = () => {
   
   return (
+    <AnimatePresence>
     <div className={style.OurPortfolio}>
       <div className={style.top}>
         <div>
-            <p className={style.head}>Our <span>Portfolio</span></p>
+            <motion.p
+            initial={{opacity: 0, x: 400}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -400}}
+            transition={{duration: 0.5}}
+            className={style.head}>Our <span>Portfolio</span></motion.p>
         </div>
       </div>
       <Porfolios />
@@ -18,6 +25,7 @@ const OurPortfolio = () => {
         <PrimaryButton text={"View our all projects"}/>
       </div>
     </div>
+    </AnimatePresence>
   )
 }
 
