@@ -70,10 +70,10 @@ const Porfolios = ({ limit = 6 }) => {
       </div>
       <AnimatePresence mode="wait">
         <motion.div
-        initial={{opacity: 0, x: -200}}
+        initial={{opacity: 0, x: -100}}
         whileInView={{opacity: 1, x: 0}}
         transition={{duration: 0.3}}
-        exit={{opacity: 0, x: 200}}
+        exit={{opacity: 0, x: 100}}
         viewport={{once: false}}
         className={style.mid}>
           {projects.map(
@@ -81,9 +81,9 @@ const Porfolios = ({ limit = 6 }) => {
               i < limit && (
                 <motion.div
                   key={t.id}
-                  initial={{ opacity: 0, x: 300 }}
+                  initial={{ opacity: 0, x: 200 }}
                   animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -300 }}
+                  exit={{ opacity: 0, x: -200 }}
                   transition={{duration: 0.5 }}
                   className={`${style.gridItem} item${i}`}
                 
