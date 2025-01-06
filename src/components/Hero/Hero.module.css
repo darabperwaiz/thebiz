@@ -2,9 +2,9 @@
   /* have to fix image link */
   background-image: url(/assets/images/image106.webp);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   /* background-position-y: 72px; */
-  background-position: center 200px;
+  background-position: center 105px;
 }
 
 .container {
