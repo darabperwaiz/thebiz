@@ -16,13 +16,13 @@ const Hero = () => {
           whileInView={{visibility: "visible", x: 0}}
           transition={{duration: 0.5}}
           exit={{x: 300}}
-          >THE BIZ TECHNOLOGY</motion.h1>
+          >APPEARIST TECHNOLOGY</motion.h1>
           <motion.h2
           initial={{visibility: "hidden", x: 300}}
           whileInView={{visibility: "visible", x: 0}}
           transition={{duration: 0.5}}
           exit={{x: -300}}
-          >WHERE INNOVATION MEETS ENTERPRISE SOLUTIONS</motion.h2>
+          >CRAFT YOUR DIGITAL JOURNEY THE WAY YOU IMAGINE</motion.h2>
           </div>
           <motion.p
           initial={{visibility: "hidden", y: 300}}
