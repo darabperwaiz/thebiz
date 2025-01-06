@@ -24,11 +24,12 @@
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .banner {
     flex-wrap: wrap;
     padding: 10px 10px;
     justify-content: center;
+    gap: 10px;
   }
   .left {
     flex-shrink: 1;
