@@ -63,7 +63,7 @@ const Ceo = () => {
         transition={{duration: 0.5}}
         className={style.mid}>
             <Image className={style.quote} src="/assets/images/quoteLeft.svg" width={31} height={31} alt="" />
-            <p>The Biz Technology, our mission is clear  to provide you with cutting-edge insights, trends, and innovations in the dynamicrealm of business.</p>
+            <p>Balancing daily tasks and family responsibilities with care and intention should always remain a top priority, reflecting our commitment to a thoughtful and meaningful approach.</p>
         </motion.div>
         <Image className={style.quote} src="/assets/images/quoteRight.svg" alt="" width={31} height={31} />
         <LearnMoreBtn text={"learn more"} url={'#'} color={'blue'} />

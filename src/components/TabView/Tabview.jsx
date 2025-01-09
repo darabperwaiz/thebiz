@@ -19,7 +19,7 @@ const Tabview = () => {
     <div className={style.tabsWrapper}>
     <div className={style.tabs}>
       <div onClick={(e)=> handleTab(e, 1)} className={toggleState === 1 ? `${style.tab} ${style.active}`: `${style.tab}`}>Services Offered {toggleState === 1 ? (<motion.div className={style.underline} layoutId={style.underline}/>) : null}</div>
-      <div onClick={(e)=> handleTab(e, 2)} className={toggleState === 2 ? `${style.tab} ${style.active}`: `${style.tab}`}>Digital / Internet Marketing {toggleState === 2 ? (<motion.div className={style.underline} layoutId={style.underline}/>) : null}</div>
+      <div onClick={(e)=> handleTab(e, 2)} className={toggleState === 2 ? `${style.tab} ${style.active}`: `${style.tab}`}>Digital Marketing {toggleState === 2 ? (<motion.div className={style.underline} layoutId={style.underline}/>) : null}</div>
     </div>
     <AnimatePresence mode="wait">
     {toggleState === 1 && (
@@ -32,7 +32,7 @@ const Tabview = () => {
       // className={toggleState===1 ? `${style.content} ${style.contentVisible}` : `${style.content}`}
       className={style.content}
       >
-          {data.map((item, index)=> (
+          {data.map((item, index)=> index < 5 && (
               <Card data={item} index={index} key={index}/>
           ))}
       </motion.div>
@@ -47,7 +47,7 @@ const Tabview = () => {
       // className={toggleState===1 ? `${style.content} ${style.contentVisible}` : `${style.content}`}
       className={style.content}
       >
-          {data.map((item, index)=> (
+          {data.map((item, index)=> index >= 5 && (
               <Card data={item} index={index} key={index}/>
           ))}
       </motion.div>

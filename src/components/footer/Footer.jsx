@@ -31,8 +31,7 @@ const Footer = () => {
             exit={{opacity: 0, x: -100}}
             transition={{duration: 0.5}}
             className={style.paragraph}>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout
+              Appearist Technology LLC has been empowering businesses for 8+ years with expert solutions in web development, digital marketing, and mobile apps, fostering growth, innovation, and lasting partnerships
             </motion.p>
             <div className={style.socialIcons}>
               <motion.div
@@ -88,8 +87,7 @@ const Footer = () => {
             <div className={style.links}>
               <Link href="#">Site Map</Link>
               <Link href="#">Terms and conditions</Link>
-              <Link href="#">Privacy Policy</Link>
-              <Link href="#">Refund Policy</Link>
+              <Link href="#">Blog</Link>
               <Link href="#">FAQ</Link>
               <Link href="#">Portfolio</Link>
             </div>
@@ -102,7 +100,7 @@ const Footer = () => {
           className={style.quickLinks}>
             <p>Hire Dedicated Expert</p>
             <div className={style.links}>
-              <Link href="#">Sr. Website dev manager</Link>
+              <Link href="#">Sr. Website Dev Manager</Link>
               <Link href="#">Sr. Graphic Designer</Link>
               <Link href="#">Sr. Digital Marketing Manager</Link>
             </div>
@@ -141,7 +139,7 @@ const Footer = () => {
           </motion.div>
         </div>
         <div className={style.copyright}>
-          <span>&#169;</span>Copyright TheBiztechnology. All right reserved
+          <span>&#169;</span>Copyright Appearist Technology LLC. All right reserved
         </div>
         </div>
       </div>
