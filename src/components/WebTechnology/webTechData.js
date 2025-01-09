@@ -2,7 +2,7 @@ export const webTechData = [
     {
         id: "1",
         tag: "PHP Laravel",
-        description: "An all-in-one e-commerce platform that enables businesses to create, customize, and manage online stores with ease, offering a seamless shopping experience for customers.",
+        description: "A powerful and elegant PHP framework that facilitates rapid development of web applications with expressive syntax and robust features.",
         src: 'logos_php.svg'
     },
     {
@@ -14,13 +14,13 @@ export const webTechData = [
     {
         id: "3",
         tag: "Wordpress",
-        description: "An all-in-one WordPress solution that empowers businesses to create, customize, and manage professional online stores effortlessly. With seamless integration and user-friendly tools, offer your customers an exceptional shopping experience on a fully customizable platform.",
+        description: "WordPress technology: A versatile and user-friendly content management system (CMS) powering millions of websites worldwide, known for its flexibility and extensive plugin ecosystem.",
         src: 'wordpress.svg'
     },
     {
         id: "4",
         tag: "Magento",
-        description: "Magento is a powerful e-commerce platform that enables businesses to effortlessly create, customize, and manage online stores, ensuring a seamless shopping experience for customers.",
+        description: "A robust and scalable e-commerce platform offering unparalleled flexibility and customization options for businesses of all sizes.",
         src: 'Vector.svg'
     },
     {
@@ -32,19 +32,19 @@ export const webTechData = [
     {
         id: "6",
         tag: "Wix",
-        description: "An all-in-one e-commerce platform built on PHP Laravel, enabling businesses to easily create, customize, and manage online stores while providing a seamless shopping experience for customers.",
+        description: "An intuitive website builder platform that enables users to create stunning and professional websites without any coding knowledge, offering a wide range of customizable templates and features.",
         src: 'bxl_wix.svg'
     },
     {
         id: "7",
         tag: "Woo Commerce",
-        description: "An all-in-one e-commerce platform that empowers businesses to effortlessly create, customize, and manage their online stores. WooCommerce offers a seamless shopping experience for customers, with robust features and flexibility to meet the needs of growing businesses.",
+        description: "A flexible and customizable e-commerce plugin for WordPress websites, empowering businesses to easily sell products and services online.",
         src: 'devicon_woocommerce-wordmark.svg'
     },
     {
         id: "8",
         tag: "Java Script",
-        description: "Magento is a powerful e-commerce platform that enables businesses to effortlessly create, customize, and manage online stores, ensuring a seamless shopping experience for customers.",
+        description: "A versatile programming language used for creating interactive and dynamic content on websites, known for its widespread adoption and compatibility across different web browsers.",
         src: 'devicon_javascript.svg'
     },
 ]

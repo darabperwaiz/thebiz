@@ -18,7 +18,7 @@ const TrustedBrands = () => {
       exit={{ opacity: 0, scale: 0 }}
       transition={{ duration: 0.5 }}
       >
-        <div className={style.trustpilot}>
+        <a href="https://www.trustpilot.com/review/appearisttechnology.com" className={style.trustpilot}>
           <div className={style.trustpilotHead}>
             <Image src={GreenStar} alt="green star" />
             <p>Trustpilot</p>
@@ -43,7 +43,7 @@ const TrustedBrands = () => {
           <div className={style.rating}>
             <p>Rated 4.5/5.0</p>
           </div>
-        </div>
+        </a>
         </Motion>
         <Motion
         initial={{ opacity: 0, scale: 0 }}
@@ -51,7 +51,7 @@ const TrustedBrands = () => {
         exit={{ opacity: 0, scale: 0 }}
         transition={{delay: 0.2, duration: 0.5 }}
         >
-        <div className={style.google}>
+        <a href="https://www.google.com/maps/place/Appearist+Technology/@30.2977077,-97.7440827,17z/data=!3m1!4b1!4m6!3m5!1s0x8644b5c6ec41dd8d:0xfdcbab8157ed8bae!8m2!3d30.2977077!4d-97.7415078!16s%2Fg%2F11wj6f6s5c?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" className={style.google}>
           <div className={style.gLeft}>
             <Image src={google} alt="google" />
             <div className={style.YStar}>
@@ -67,7 +67,7 @@ const TrustedBrands = () => {
             <p>average rating</p>
             <p>4.7</p>
           </div>
-        </div>
+        </a>
         </Motion>
         <Motion
         initial={{ opacity: 0, scale: 0 }}
@@ -75,9 +75,9 @@ const TrustedBrands = () => {
         exit={{ opacity: 0, scale: 0 }}
         transition={{delay: 0.4, duration: 0.5 }}
         >
-        <div className={style.clutch}>
+        <a href="https://review.clutch.co/review/?provider_id=2429327" target="_blank" rel="noopener noreferrer" className={style.clutch}>
           <Image src="/assets/images/clutch.webp" width={100} height={50} alt="" loading="lazy"/>
-        </div>
+        </a>
         </Motion>
       </div>
   )
