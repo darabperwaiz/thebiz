@@ -29,15 +29,15 @@ const Ceo = () => {
         <div className={style.leftLeft}>
             <div className={style.title}>
                 <motion.p
-                initial={{opacity: 0, rotate: 45}}
-                whileInView={{opacity: 1, rotate: 0}}
-                exit={{opacity: 0, rotate: 45}}
+                initial={{opacity: 0, x: -30}}
+                whileInView={{opacity: 1, x: 0}}
+                exit={{opacity: 0, x: -30}}
                 transition={{duration: 0.9}}
                 >KAMRAN</motion.p>
                 <motion.p
-                initial={{opacity: 0, rotate: -45}}
-                whileInView={{opacity: 1, rotate: 0}}
-                exit={{opacity: 0, rotate: -45}}
+                initial={{opacity: 0, x: -30}}
+                whileInView={{opacity: 1, x: 0}}
+                exit={{opacity: 0, x: -30}}
                 transition={{duration: 0.9}}
                 >ASHRAF</motion.p>
             </div>
