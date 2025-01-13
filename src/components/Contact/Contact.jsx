@@ -14,10 +14,10 @@ const Contact = () => {
     <AnimatePresence>
     <div className={style.contact}>
       <motion.div
-      initial={{opacity: 0, x: 300}}
+      initial={{opacity: 0, x: -100}}
       whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: -300}}
-      transition={{duration: 0.5}}
+      exit={{opacity: 0, x: 100}}
+      transition={{duration: 0.9}}
       className={style.left}>
         <div className={style.topLeft}>
           <p className={style.head}>Contact Us</p>
@@ -48,10 +48,10 @@ const Contact = () => {
         </div>
       </motion.div>
       <motion.div
-      initial={{opacity: 0, x: -300}}
+      initial={{opacity: 0, x: 100}}
       whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: 300}}
-      transition={{duration: 0.5}}
+      exit={{opacity: 0, x: -100}}
+      transition={{duration: 0.9}}
       className={style.right}>
         <div className={style.rightTop}>
           <p>More About you</p>

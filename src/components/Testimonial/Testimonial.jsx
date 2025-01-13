@@ -35,10 +35,10 @@ const Testimonial = () => {
     <AnimatePresence>
     <div className={style.testimonial}>
       <motion.div
-      initial={{opacity: 0, x: -300}}
+      initial={{opacity: 0, x: -100}}
       whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: -300}}
-      transition={{duration: 0.5}}
+      exit={{opacity: 0, x: -100}}
+      transition={{duration: 0.9}}
       className={style.left}>
         <p>Testimonial</p>
         <p>
@@ -48,8 +48,8 @@ const Testimonial = () => {
       <motion.div
       initial={{opacity: 0, y: 100}}
       whileInView={{opacity: 1, y: 0}}
-      exit={{opacity: 0, y: -200}}
-      transition={{duration: 0.5}}
+      exit={{opacity: 0, y: -100}}
+      transition={{duration: 0.9}}
       className={style.mid}>
         <div className={style.outer}>
           <div className={style.inner}>
@@ -94,10 +94,10 @@ const Testimonial = () => {
         </div>
       </motion.div>
       <motion.div
-      initial={{opacity: 0, x: 300}}
+      initial={{opacity: 0, x: 100}}
       whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: 300}}
-      transition={{duration: 0.5}}
+      exit={{opacity: 0, x: -100}}
+      transition={{duration: 0.9}}
       className={style.right}>
         <div className={style.rightTop}>
           <Image

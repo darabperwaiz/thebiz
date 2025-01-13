@@ -13,7 +13,7 @@ export const Card = ({data, index}) => {
     }
 
     useEffect(() => {
-        if(index===2) {
+        if(index===1 || index===7) {
             setIsActive(true)
         }
         // return () => {

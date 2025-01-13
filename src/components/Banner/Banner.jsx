@@ -7,10 +7,10 @@ const Banner = () => {
   return (
     <AnimatePresence>
     <motion.div 
-    initial={{opacity: 0, scale: 0}}
+    initial={{opacity: 0, scale: 0.6}}
     whileInView={{opacity: 1, scale: 1}}
-    exit={{opacity: 0, scale: 0}}
-    transition={{duration: 0.7}}
+    exit={{opacity: 0, scale: 0.6}}
+    transition={{duration: 0.9}}
     className={style.banner}>
       <div className={style.left}>
         <p>Experience excellence with our top-notch digital services</p>

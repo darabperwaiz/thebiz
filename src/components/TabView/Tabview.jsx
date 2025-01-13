@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react'
 import style from './tabview.module.css'
-import { data } from "./servicesData"
+import { servicesData } from "./servicesData"
+import { digitalData } from "./digitalData"
 import { Card } from "../Card/Card"
 import { AnimatePresence, motion } from "framer-motion"
 
@@ -25,14 +26,14 @@ const Tabview = () => {
     {toggleState === 1 && (
       <motion.div
       key="tab1"
-      initial={{opacity: 0, x: 300}}
-      whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: 300}}
-      transition={{duration: 0.5}}
+      // initial={{opacity: 0, x: 100}}
+      // whileInView={{opacity: 1, x: 0}}
+      // exit={{opacity: 0, x: 100}}
+      // transition={{duration: 0.5}}
       // className={toggleState===1 ? `${style.content} ${style.contentVisible}` : `${style.content}`}
       className={style.content}
       >
-          {data.map((item, index)=> index < 5 && (
+          {servicesData.map((item, index)=> (
               <Card data={item} index={index} key={index}/>
           ))}
       </motion.div>
@@ -40,14 +41,14 @@ const Tabview = () => {
     {toggleState === 2 && (
       <motion.div
       key="tab2"
-      initial={{opacity: 0, x: -300}}
-      whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: -300}}
-      transition={{duration: 0.5}}
+      // initial={{opacity: 0, x: -100}}
+      // whileInView={{opacity: 1, x: 0}}
+      // exit={{opacity: 0, x: -100}}
+      // transition={{duration: 0.5}}
       // className={toggleState===1 ? `${style.content} ${style.contentVisible}` : `${style.content}`}
       className={style.content}
       >
-          {data.map((item, index)=> index >= 5 && (
+          {digitalData.map((item, index)=> (
               <Card data={item} index={index} key={index}/>
           ))}
       </motion.div>

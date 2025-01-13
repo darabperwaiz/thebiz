@@ -13,19 +13,19 @@ const Banner2 = () => {
       <div className={style.gradient}>
         <div className={style.left}>
           <motion.p
-          initial={{opacity: 0, x: -300}}
+          initial={{opacity: 0, x: -100}}
           whileInView={{opacity: 1, x: 0}}
-          exit={{opacity: 0, x: 300}}
-          transition={{duration: 0.5}}
+          exit={{opacity: 0, x: 100}}
+          transition={{duration: 0.9}}
           className={style.title}>
             Enhance your business with the most advanced technological solutions
             available.
           </motion.p>
           <motion.p
-          initial={{opacity: 0, x: -300}}
+          initial={{opacity: 0, x: -100}}
           whileInView={{opacity: 1, x: 0}}
-          exit={{opacity: 0, x: 300}}
-          transition={{duration: 0.5}}
+          exit={{opacity: 0, x: 100}}
+          transition={{duration: 0.9}}
           className={style.des}>
             8+ years of building digital products and we are just getting
             started
@@ -42,10 +42,10 @@ const Banner2 = () => {
           />
           <div className={style.imgBox}>
             <motion.div
-            initial={{opacity: 0, y: 300}}
+            initial={{opacity: 0, y: 100}}
             whileInView={{opacity: 1, y: 0}}
-            exit={{opacity: 0, y: -300}}
-            transition={{duration: 0.5}}
+            exit={{opacity: 0, y: -100}}
+            transition={{duration: 0.9}}
             >
             <Image
               src="/assets/images/man.webp"

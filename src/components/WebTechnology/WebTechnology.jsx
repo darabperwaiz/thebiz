@@ -13,7 +13,7 @@ const WebTechnology = () => {
     const [isActive, setIsActive] = useState(false)
 
     const handleClick = (item, index) => {
-        setSingleData(item)
+        setSingleData(item);
     }
 
   return (
@@ -21,9 +21,9 @@ const WebTechnology = () => {
     <div className={style.technology}>
       <div className={style.top}>
         <motion.p
-        initial={{opacity: 0, x: 200}}
+        initial={{opacity: 0, x: 100}}
         whileInView={{opacity: 1, x: 0}}
-        transition={{ duration: 0.7}}
+        transition={{ duration: 0.9}}
         
         ><b>Web</b> Technology</motion.p>
       </div>
@@ -36,7 +36,7 @@ const WebTechnology = () => {
                     initial={{opacity: 0, x: -100}}
                     whileInView={{opacity: 1, x: 0}}
                     exit={{opacity:0, x:100}}
-                    transition={{duration: 0.5}}
+                    transition={{duration: 0.9}}
                     viewport={{once: true}}
                     className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} onClick={()=> handleClick(item, index)} >{item.tag}</motion.li>
                 ))}
@@ -47,7 +47,7 @@ const WebTechnology = () => {
         initial={{ y: 50, opacity: 0}}
         animate={{y: 0, opacity: 1}}
         exit={{y: -60, opacity:0}}
-        transition={{duration: 0.5}}
+        transition={{duration: 0.9}}
         className={style.right}>
              <Image src={`/assets/images/brandIcons/${singleData.src}`} width={100} height={100} alt="new" loading="lazy"/>
              <div>

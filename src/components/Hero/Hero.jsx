@@ -12,23 +12,23 @@ const Hero = () => {
         <div className={style.heroContainer}>
           <div className={style.header}>
           <motion.h1
-          initial={{visibility: "hidden", x: -300}}
+          initial={{visibility: "hidden", x: -100}}
           whileInView={{visibility: "visible", x: 0}}
-          transition={{duration: 0.5}}
-          exit={{x: 300}}
+          transition={{duration: 0.9}}
+          exit={{x: 100}}
           >APPEARIST TECHNOLOGY</motion.h1>
           <motion.h2
-          initial={{visibility: "hidden", x: 300}}
+          initial={{visibility: "hidden", x: 100}}
           whileInView={{visibility: "visible", x: 0}}
-          transition={{duration: 0.5}}
-          exit={{x: -300}}
+          transition={{duration: 0.9}}
+          exit={{x: -100}}
           >CRAFT YOUR DIGITAL JOURNEY THE WAY YOU IMAGINE</motion.h2>
           </div>
           <motion.p
-          initial={{visibility: "hidden", y: 300}}
-          whileInView={{visibility: "visible", y: 0}}
-          transition={{duration: 0.5}}
-          exit={{y: -300}}
+          initial={{visibility: "hidden", opacity: 0}}
+          whileInView={{visibility: "visible", opacity: 1}}
+          transition={{duration: 0.9}}
+          exit={{visibility: "hidden", opacity: 0}}
           >&quot;<em><b>Accelerate Your Online Growth,</b></em> Get Your Free Website & Marketing Consultation Today!&quot;
           </motion.p>
           <PrimaryButton text={"Let's talk with me"} />

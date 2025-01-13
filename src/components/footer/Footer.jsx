@@ -18,10 +18,10 @@ const Footer = () => {
         <div className={style.footerWrapper}>
           <div className={style.left}>
             <motion.div
-            initial={{opacity: 0, y: -200}}
+            initial={{opacity: 0, y: -100}}
             whileInView={{opacity: 1, y: 0}}
-            exit={{opacity: 0, y: 200}}
-            transition={{duration: 0.5}}
+            exit={{opacity: 0, y: 100}}
+            transition={{duration: 0.9}}
             className={style.logo}>
               <Image src="/assets/images/logo.webp" width={126} height={88} alt="" />
             </motion.div>
@@ -29,7 +29,7 @@ const Footer = () => {
             initial={{opacity: 0, x: -100}}
             whileInView={{opacity: 1, x: 0}}
             exit={{opacity: 0, x: -100}}
-            transition={{duration: 0.5}}
+            transition={{duration: 0.9}}
             className={style.paragraph}>
               Appearist Technology LLC has been empowering businesses for 8+ years with expert solutions in web development, digital marketing, and mobile apps, fostering growth, innovation, and lasting partnerships
             </motion.p>
@@ -38,7 +38,7 @@ const Footer = () => {
               initial={{opacity: 0, x: -50}}
               whileInView={{opacity: 1, x: 0}}
               exit={{opacity: 0, x: 50}}
-              transition={{delay: 0.6, duration: 0.5}}
+              transition={{delay: 0.6, duration: 0.9}}
               className={style.icon}>
                 <FaFacebookF style={{ color: "#4285F4" }} />
               </motion.div>
@@ -46,7 +46,7 @@ const Footer = () => {
               initial={{opacity: 0, x: -100}}
               whileInView={{opacity: 1, x: 0}}
               exit={{opacity: 0, x: 100}}
-              transition={{delay: 0.4, duration: 0.5}}
+              transition={{delay: 0.4, duration: 0.9}}
               className={style.icon}>
                 <FaTwitter style={{ color: "#229BF2" }} />
               </motion.div>
@@ -54,7 +54,7 @@ const Footer = () => {
               initial={{opacity: 0, x: -100}}
               whileInView={{opacity: 1, x: 0}}
               exit={{opacity: 0, x: 100}}
-              transition={{delay: 0.2, duration: 0.5}}
+              transition={{delay: 0.2, duration: 0.9}}
               className={style.icon}>
                 <div className={style.insta}>
                   <FaInstagram
@@ -71,7 +71,7 @@ const Footer = () => {
               initial={{opacity: 0, x: -100}}
               whileInView={{opacity: 1, x: 0}}
               exit={{opacity: 0, x: 100}}
-              transition={{duration: 0.5}}
+              transition={{duration: 0.9}}
               className={style.icon}>
                 <FaYoutube style={{ color: "#D80027" }} />
               </motion.div>
@@ -81,7 +81,7 @@ const Footer = () => {
           initial={{opacity: 0, y: -100}}
           whileInView={{opacity: 1, y: 0}}
           exit={{opacity: 0, y: 100}}
-          transition={{duration: 0.5}}
+          transition={{duration: 0.9}}
           className={style.quickLinks}>
             <p>Quick Links</p>
             <div className={style.links}>
@@ -96,7 +96,7 @@ const Footer = () => {
           initial={{opacity: 0, y: -100}}
           whileInView={{opacity: 1, y: 0}}
           exit={{opacity: 0, y: 100}}
-          transition={{delay: 0.2, duration: 0.5}}
+          transition={{delay: 0.2, duration: 0.9}}
           className={style.quickLinks}>
             <p>Hire Dedicated Expert</p>
             <div className={style.links}>
@@ -106,10 +106,10 @@ const Footer = () => {
             </div>
           </motion.div>
           <motion.div
-          initial={{opacity: 0, y: -200}}
+          initial={{opacity: 0, y: -100}}
           whileInView={{opacity: 1, y: 0}}
-          exit={{opacity: 0, y: 200}}
-          transition={{delay: 0.4, duration: 0.5}}
+          exit={{opacity: 0, y: 100}}
+          transition={{delay: 0.4, duration: 0.9}}
           className={style.quickLinks}>
             <p>Our Offices</p>
             <div className={style.links}>

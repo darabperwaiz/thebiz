@@ -13,16 +13,16 @@ const Ceo = () => {
     <div className={style.ceo}>
       <div className={style.left}>
         <motion.div
-        initial={{opacity: 0, rotate: 45}}
+        initial={{opacity: 0, rotate: 20}}
         whileInView={{opacity: 1, rotate: 0}}
-        exit={{opacity: 0, rotate: 45}}
-        transition={{duration: 0.5}}
+        exit={{opacity: 0, rotate: 20}}
+        transition={{duration: 0.9}}
         className={style.curve}></motion.div>
         <motion.div
-        initial={{opacity: 0, scale: 0}}
+        initial={{opacity: 0, scale: 0.9}}
         whileInView={{opacity: 1, scale: 1}}
-        exit={{opacity: 0, scale: 0}}
-        transition={{duration: 0.5}}        
+        exit={{opacity: 0, scale: 0.9}}
+        transition={{duration: 0.9}}        
         className={style.ceoImage}>
             <Image src="/assets/images/ceo_image.webp" width={210} height={300} alt="" />
         </motion.div>
@@ -32,20 +32,20 @@ const Ceo = () => {
                 initial={{opacity: 0, rotate: 45}}
                 whileInView={{opacity: 1, rotate: 0}}
                 exit={{opacity: 0, rotate: 45}}
-                transition={{duration: 0.5}}
+                transition={{duration: 0.9}}
                 >KAMRAN</motion.p>
                 <motion.p
                 initial={{opacity: 0, rotate: -45}}
                 whileInView={{opacity: 1, rotate: 0}}
                 exit={{opacity: 0, rotate: -45}}
-                transition={{duration: 0.5}}
+                transition={{duration: 0.9}}
                 >ASHRAF</motion.p>
             </div>
             <motion.p
             initial={{opacity: 0, x: 100}}
             whileInView={{opacity: 1, x: 0}}
             exit={{opacity: 0, x: 100}}
-            transition={{duration: 0.5}}
+            transition={{duration: 0.9}}
             >Founder and CEO</motion.p>
         </div>
       </div>
@@ -54,13 +54,13 @@ const Ceo = () => {
         initial={{opacity: 0, x: 50}}
         whileInView={{opacity: 1, x: 0}}
         exit={{opacity: 0, x: 50}}
-        transition={{duration: 0.5}}
+        transition={{duration: 0.9}}
         >A Message From CEO</motion.p>
         <motion.div 
         initial={{opacity: 0, x: 50}}
         whileInView={{opacity: 1, x: 0}}
         exit={{opacity: 0, x: 50}}
-        transition={{duration: 0.5}}
+        transition={{duration: 0.9}}
         className={style.mid}>
             <Image className={style.quote} src="/assets/images/quoteLeft.svg" width={31} height={31} alt="" />
             <p>Balancing daily tasks and family responsibilities with care and intention should always remain a top priority, reflecting our commitment to a thoughtful and meaningful approach.</p>

@@ -7,16 +7,16 @@ const SmallCard = ({key, title, des, icon}) => {
   return (
     <motion.div
     key={key}
-    initial={{opacity: 0, x: -300}}
+    initial={{opacity: 0, x: -100}}
     whileInView={{opacity: 1, x: 0}}
-    exit={{opacity: 0, x: 300}}
-    transition={{duration: 0.5}}
+    exit={{opacity: 0, x: 100}}
+    transition={{duration: 0.9}}
     className={style.card}>
       <motion.div
-      initial={{rotateZ: 180}}
-      whileInView={{rotateZ: 0}}
-      transition={{duration: 0.5}}
-      exit={{rotateZ: 180}}
+      initial={{opacity: 0, x: -100}}
+      whileInView={{opacity: 1, x: 0}}
+      exit={{opacity: 0, x: 100}}
+      transition={{duration: 0.9}}
       className={style.top}>
         <Image src={`/assets/images/corevalue/${icon}`} alt="" width={100} height={100}/>
       </motion.div>
