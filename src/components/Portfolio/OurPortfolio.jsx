@@ -13,10 +13,10 @@ const OurPortfolio = () => {
       <div className={style.top}>
         <div>
             <motion.p
-            initial={{opacity: 0, x: 200}}
+            initial={{opacity: 0, x: 100}}
             whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -200}}
-            transition={{duration: 0.5}}
+            exit={{opacity: 0, x: -100}}
+            transition={{duration: 0.7}}
             className={style.head}>Our <span>Portfolio</span></motion.p>
         </div>
       </div>

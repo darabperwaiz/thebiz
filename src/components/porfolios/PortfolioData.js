@@ -7,7 +7,7 @@ export const portfolioData = [
     {
         id: 2,
         category: 'mobile app',
-        img: 'project2.webp'
+        img: 'project2.png'
     },
     {
         id: 3,

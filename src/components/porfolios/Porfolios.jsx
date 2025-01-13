@@ -72,7 +72,7 @@ const Porfolios = ({ limit = 6 }) => {
         <motion.div
         initial={{opacity: 0, x: -100}}
         whileInView={{opacity: 1, x: 0}}
-        transition={{duration: 0.3}}
+        transition={{duration: 0.7}}
         exit={{opacity: 0, x: 100}}
         viewport={{once: true}}
         className={style.mid}>
@@ -81,18 +81,18 @@ const Porfolios = ({ limit = 6 }) => {
               i < limit && (
                 <motion.div
                   key={t.id}
-                  initial={{ opacity: 0, x: 200 }}
+                  initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -200 }}
-                  transition={{duration: 0.5 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{duration: 0.7 }}
                   className={`${style.gridItem} item${i}`}
                 
                 >
                   <Image
                     src={`/assets/images/porfolioimg/${t.img}`}
                     alt=""
-                    width={500}
-                    height={500}
+                    width={900}
+                    height={400}
                     // loading="lazy"
                   />
                 </motion.div>

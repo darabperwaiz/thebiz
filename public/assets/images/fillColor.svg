@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient">
+      <stop offset="0%" stop-color="#B86ADF" />
+      <stop offset="52%" stop-color="#FF6C63" />
+      <stop offset="100%" stop-color="#FFB147" />
+    </linearGradient>
+  </defs>
+</svg>
