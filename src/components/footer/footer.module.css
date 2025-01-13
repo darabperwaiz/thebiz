@@ -56,7 +56,7 @@
 
 
 .insta svg {
-    fill: url("/assets/images/fillColor.svg#gradient");
+    fill: url(/assets/images/fillColor.svg#gradient);
 }
 
 .quickLinks {
