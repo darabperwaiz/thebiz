@@ -48,9 +48,9 @@ export default function Home() {
       <section>
         <div className="container">
           <Roadmap />
-            <Testimonial />
-            <Contact />
-            <Ceo />
+          <Testimonial />
+          <Contact />
+          <Ceo />
         </div>
       </section>
     </>
