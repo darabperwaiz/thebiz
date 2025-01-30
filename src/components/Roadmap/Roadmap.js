@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import style from './roadmap.module.css'
 import Image from "next/image"
 import HoverIcon from "./HoverIcon/HoverIcon"
 // import { MdFlight } from "react-icons/md"
 
-const Roadmap = () => {
+const Roadmap = ({data}) => {
   return (
     <div className={style.roadmap}>
       <div className={style.title}>
@@ -13,10 +13,13 @@ const Roadmap = () => {
       </div>
       <div className={style.bottom}>
             <Image src="/assets/images/brandIcons/curve_rainbow.png" alt="" width={400} height={300}/>
-            <div className={style.icon1}>
-            <HoverIcon p1="Consulation & Assistment" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="focus.svg" bgColor="#FFE3E1"/>
-            </div>
-            <div className={style.icon2}>
+            {data.map((item, index)=> (
+              <div className={style[`icon${index + 1}`]} key={index}>
+              <HoverIcon p1={item.title} p2={item.description} icon={item.icon} bgColor={item.bgColor}/>
+              </div>
+            ))}
+            
+            {/* <div className={style.icon2}>
             <HoverIcon p1="Analysis & Planning" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="YelloLine.svg" bgColor="#FFEFD3"/>
             </div>
             <div className={style.icon3}>
@@ -30,7 +33,7 @@ const Roadmap = () => {
             </div>
             <div className={style.icon6}>
             <HoverIcon p1="Support & Maintenance" p2="our platform is meticulously crafted to equip you with indispensable knowledge." icon="purple.svg" bgColor="#FAE7FF"/>
-            </div>
+            </div> */}
       </div>
     </div>
   )

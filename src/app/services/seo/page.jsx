@@ -9,6 +9,45 @@ import ServiceHeaderWrapper from "@/components/ServiceHeaderWrapper/ServiceHeade
 import Benefits from "@/components/benefitsWrapper/Benefits"
 import Outcome from "@/components/outcome/Outcome"
 import Seopackage from "@/components/SeoPackage/Seopackage"
+import Roadmap from "@/components/Roadmap/Roadmap"
+import { seoRoad } from "./seoRoadMap"
+
+const outcomeData = [
+  {
+    title: "Website Audit",
+    description: "A thorough website audit to analyze performance and identify areas for improvement in technical SEO, content, and user experience."
+  },
+  {
+    title: "Keyword Research & Strategy",
+    description: "Researching targeted keywords and developing a strategy to drive traffic and improve search rankings."
+  },
+  {
+    title: "On-Page Optimization",
+    description: "Optimizing meta tags, headings, images, and content structure for enhanced search engine visibility."
+  },
+  {
+    title: "Technical SEO Services",
+    description: "Providing technical SEO services to fix crawl errors, improve site speed, and ensure a well-structured website."
+  },
+  {
+    title: "High-Quality Content Creation",
+    description: "Creating high-quality, engaging content that resonates with your audience and ranks highly in search results."
+  },
+  {
+    title: "Link Building & Authority Building",
+    description: "Building high-quality backlinks to increase domain authority and improve search rankings."
+  },
+  {
+    title: "Local SEO Optimization",
+    description: "Implementing focused strategies for local SEO optimization, including Google My Business optimization."
+  },
+  {
+    title: "Performance Tracking",
+    description: "Tracking performance and making ongoing improvements to enhance search"
+  },
+
+]
+
 
 export const metadata = {
   title: "SEO | Thebiztechnology",
@@ -21,7 +60,11 @@ const Seo = () => {
     <>
       <section className={style.seo}>
         <div className="container">
-            <ServiceHeaderWrapper Head={<>A website without <span>SEO</span><br /><span>is same like a car without fuel.</span></>} Des={<>Boost your online presence with our expert SEO services. Improve your website&apos;s visibility, drive  more customer traffic, and dominate search engine rankings let&apos;s make your business shine in the  digital landscape</>}>
+            <ServiceHeaderWrapper 
+            Head={<>Comprehensive Digital Marketing Services to Dominate Search Results!</>} 
+            Des={<>Boost your online presence with our expert SEO services. Improve your website&apos;s visibility, drive  more customer traffic, and dominate search engine rankings let&apos;s make your business shine in the  digital landscape</>}
+            pointer={['Ecom. SEO', 'Local SEO', 'National SEO']}
+            >
                 <div className={style.seoBottom}>
                     <Image src="/assets/images/google.svg" alt="google" width={20} height={20}/>
                     <Image src="/assets/images/seo_man.webp" alt="man boy" width={600} height={400} quality={100}/>
@@ -31,13 +74,18 @@ const Seo = () => {
       </section>
       <section className={style.bottomSection}>
         <div className="container">
-            <Benefits>
+            <Benefits 
+            tag="Benefits" 
+            title={<>SEO service that meets your marketing needs!</>} 
+            des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis, keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
+            >
                 <div className="imgflex">
                     <Image src="/assets/images/tab_dashboard.svg" alt="tab_dashboard" width={300} height={300}/>
                 </div>
             </Benefits>
             <Seopackage />
-            <Outcome />
+            <Outcome data={outcomeData}/>
+            <Roadmap  data={seoRoad}/>
             <Banner2 />
             <Contact />
             <Ceo />

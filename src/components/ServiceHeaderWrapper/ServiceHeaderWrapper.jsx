@@ -3,7 +3,7 @@ import style from './serviceHeader.module.css'
 import PrimaryButton from "../primaryButton/PrimaryButton"
 import Image from "next/image"
 
-const ServiceHeaderWrapper = ({children, Head, Des, url}) => {
+const ServiceHeaderWrapper = ({children, Head, Des, pointer, url}) => {
   return (
     <div className={style.flex}>
       <div className={style.left}>
@@ -16,15 +16,15 @@ const ServiceHeaderWrapper = ({children, Head, Des, url}) => {
             <div className={style.links}>
               <div className={style.linksFlex}>
                 <Image src="/assets/images/tick.svg" alt="" width={10}  height={10}/>
-                <p>Ecom. SEO</p>
+                <p>{pointer[0]}</p>
               </div>
               <div className={style.linksFlex}>
                 <Image src="/assets/images/tick.svg" alt="" width={10} height={10}/>
-                <p>Local SEO</p>
+                <p>{pointer[1]}</p>
               </div>
               <div className={style.linksFlex}>
                 <Image src="/assets/images/tick.svg" alt="" width={10} height={10}/>
-                <p>National SEO</p>
+                <p>{pointer[2]}</p>
               </div>
             </div>
         </div>

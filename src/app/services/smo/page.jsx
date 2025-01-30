@@ -8,6 +8,45 @@ import Outcome from "@/components/outcome/Outcome";
 import Banner2 from "@/components/Banner2/Banner2";
 import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
+import Seopackage from "@/components/SeoPackage/Seopackage";
+import Roadmap from "@/components/Roadmap/Roadmap";
+import { smodata } from "./SmoRoadmapdata";
+
+const outcomeData = [
+  {
+    title: "Content Strategy Development",
+    description: "Craft engaging and relevant content tailored to your target audience for maximum impact."
+  },
+  {
+    title: "Targeted Ad Campaigns:",
+    description: "Use precise audience targeting to promote products and services effectively."
+  },
+  {
+    title: "Performance Analytics:",
+    description: "Monitor key metrics and insights to optimize campaigns and measure ROI."
+  },
+  {
+    title: "Hashtag Optimization:",
+    description: "Leverage trending and niche-specific hashtags to increase reach and engagement."
+  },
+  {
+    title: "Visual Content Creation",
+    description: "Design eye-catching graphics, videos, and infographics to captivate your audience."
+  },
+  {
+    title: "Social Media Listening:",
+    description: "Track brand mentions and trends to understand customer sentiment and adapt strategies."
+  },
+  {
+    title: "Consistent Posting Schedule:",
+    description: "Maintain an active presence with regular updates to keep followers engaged."
+  },
+  {
+    title: "Engagement Strategies:",
+    description: "Interact with your audience through comments, polls, and live sessions to build loyalty."
+  },
+
+]
 
 export const metadata = {
   title: "SMO | Thebiztechnology",
@@ -23,9 +62,9 @@ const Smo = () => {
           <ServiceHeaderWrapper
             Head={
               <>
-                A website without <span>SMO</span>
+                Transform Your Online Presence with Expert <span>SMO</span> service.
                 <br />
-                <span>is same like a car without fuel.</span>
+                <span></span>
               </>
             }
             Des={
@@ -36,12 +75,17 @@ const Smo = () => {
                 in the digital landscape
               </>
             }
+            pointer={['Boost Visibility', 'Drive Traffic', 'Dominate Rankings']}
           >
             <div className="imgflex">
               <Image src="/assets/images/Group2085662584.svg" width={300} height={500} alt="" quality={100}/>
             </div>
           </ServiceHeaderWrapper>
-          <Benefits>
+          <Benefits
+          tag="Benefits"
+          title={<>SMO service that meets your <span>BRANDING</span> needs!</>}
+          des="Our SMO services are crafted to enhance your brand's visibility and foster meaningful engagement. We start with an in-depth assessment of your social media presence, identifying opportunities to align with your business goals. By leveraging creative content strategies and targeted promotions, we ensure your brand captures attention and resonates with your audience. Our expert team also promotes ongoing offers "
+          >
           <div>
         <Image className="imgfle" src="/assets/images/growth-down.webp" alt="loss graph" width={300} height={400} quality={100}/>
       </div>
@@ -51,11 +95,13 @@ const Smo = () => {
       </section>
       <section>
         <div className="container">
-            <Outcome />
+            <Outcome data={outcomeData}/>
         </div>
       </section>
       <section className="mt"> 
         <div className="container">
+            <Seopackage />
+            <Roadmap data={smodata}/>
             <Banner2 />
             <Contact />
             <Ceo />
