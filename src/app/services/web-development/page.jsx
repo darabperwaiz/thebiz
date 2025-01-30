@@ -29,6 +29,7 @@ const WebsiteDevelopment = () => {
               </>
             }
             Des={`Our expert team meticulously crafts tailored websites that embody your brand's essence and drive unparalleled user engagement. From sleek designs to seamless functionality, we ensure every aspect of your site reflects excellence. Whether you're launching a start-up or expanding your digital footprint, we're committed to delivering solutions that exceed expectations.`}
+            pointer={['Ecom. SEO', 'Local SEO', 'National SEO']}
           >
             <div className="imgflex">
               <Image src="/assets/images/website-development/Image.svg" alt="" width={300} height={500} />
@@ -38,7 +39,11 @@ const WebsiteDevelopment = () => {
       </section>
       <section className={style.bottom}>
         <div className="container">
-          <Benefits>
+          <Benefits
+          tag="Benefits" 
+          title={<>SEO service that meets your marketing needs!</>} 
+          des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis, keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
+          >
           <div className="imgflex">
               <Image src="/assets/images/website-development/image2.svg" alt="" width={300} height={300}/>
             </div>

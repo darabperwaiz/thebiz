@@ -22,6 +22,7 @@ const AppDevelopment = () => {
             <ServiceHeaderWrapper
             Head={<>A business without <span>APP</span><br /><span>is same like a car without fuel.</span></>}
             Des={`Boost your online presence with our expert SEO services. Improve your website's visibility, drive  more customer traffic, and dominate search engine rankings let’s make your business shine in the  digital landscape`}
+            pointer={['Ecom. SEO', 'Local SEO', 'National SEO']}
             >
                 <div className="imgflex">
               <Image src="/assets/images/app-dev/Group43.svg" alt="" width={300} height={400} quality={100}/>
@@ -31,7 +32,11 @@ const AppDevelopment = () => {
     </section>
     <section className={style.bottom}>
         <div className="container">
-            <Benefits>
+            <Benefits
+            tag="Benefits" 
+            title={<>SEO service that meets your marketing needs!</>} 
+            des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis, keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
+            >
                 <div className="imgflex">
                     <Image src="/assets/images/tab_dashboard.svg" alt="" width={300} height={300}/>
                 </div>

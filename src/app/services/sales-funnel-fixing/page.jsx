@@ -22,6 +22,7 @@ const SalesFunnel = () => {
           <ServiceHeaderWrapper
           Head={''}
           Des={`Ensure your website remains secure, up-to-date, and performing optimally with our comprehensive Annual Maintenance Website Service. Our expert team provides regular backups, security updates, and technical support to keep your website running smoothly throughout the year. From software updates to content revisions, we handle all aspects of maintenance, freeing you to focus on your core business. With proactive monitoring and timely interventions, we guarantee minimal downtime and maximum reliability for your online presence. Trust us to safeguard your website's integrity and provide peace of mind, knowing your digital storefront is in capable hands.`}
+          pointer={['Ecom. SEO', 'Local SEO', 'National SEO']}
           >
             <div className={style.topRight}>
               <div className={style.outer}>
@@ -34,7 +35,11 @@ const SalesFunnel = () => {
       </section>
       <section className={style.bottom}>
         <div className="container">
-          <Benefits>
+          <Benefits 
+          tag="Benefits" 
+          title={<>SEO service that meets your marketing needs!</>} 
+          des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis, keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
+          >
             <div className={style.botTop}>
               <Image src="/assets/images/salesFunnel/girl-smiling.png" alt="" width={130} height={250}/>
               <Image src="/assets/images/salesFunnel/boy-smiling.png" alt="" width={100} height={160}/>

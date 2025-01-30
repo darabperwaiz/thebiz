@@ -21,6 +21,7 @@ const ContentWriting = () => {
             <ServiceHeaderWrapper 
             Head={<>A website without <span>content writing</span><br/><span>is like a car without engine.</span></>}
             Des={`Boost your online presence with our expert content writing services. Engage your audience, drive more customer interest, and make your brand stand out in the digital landscape. Let’s make your business shine with compelling content.`}
+            pointer={['Ecom. SEO', 'Local SEO', 'National SEO']}
             >
             <div className={style.row}>
                 <div className={style.column1}>
@@ -40,7 +41,11 @@ const ContentWriting = () => {
       </section>
       <section className={style.mid}>
         <div className="container">
-            <Benefits>
+            <Benefits
+            tag="Benefits" 
+            title={<>SEO service that meets your marketing needs!</>} 
+            des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis, keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
+            >
                 <div className="imgflex">
                     <Image src="/assets/images/tab_dashboard.svg" alt="" width={300} height={300}/>
                 </div>
