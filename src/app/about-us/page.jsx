@@ -32,7 +32,7 @@ const AboutUs = () => {
               transition={{duration: 0.9}}
               >
               <p className={style.title}>
-                welcome to <span>the biz technology</span> company
+              Connecting Business with Smart Technology.
               </p>
               </Motion>
               <Motion
@@ -65,16 +65,11 @@ const AboutUs = () => {
             >
             <div className={style.topLeft}>
               <p className={style.topLefttitle}>
-                The design subscription that <span>connects</span> you
+                <span>Our Journey!</span>
               </p>
               <p className={style.topLeftdes}>
-                Our SEO services are designed to elevate your online presence
-                and drive tangible results. We begin with a comprehensive
-                analysis, identifying opportunities for improvement and
-                tailoring a strategy to align with your business goals. Through
-                meticulous keyword research and on-page optimization, we ensure
-                your content ranks high on search engines, attracting the right
-                audience.
+              From salesperson to starting our organization, Appearist Technology brings over a decade of digital experience to helping businesses grow through tailored web development, mobile application, and marketing solutions. We begin by understanding your goals and then craft strategies that deliver real results with proven expertise and innovative thinking, we connect you to your audience, boost visibility, and empower your brand to thrive in today’s competitive digital space.
+
               </p>
             </div>
             </Motion>
@@ -183,16 +178,11 @@ const AboutUs = () => {
             >
             <div className={style.midRight}>
               <p className={style.midRightTitle}>
-                The design <span>subscription</span> thats connects you.
+                <span>Our success story!</span>
               </p>
               <p className={style.midRightDes}>
-                Our SEO services are designed to elevate your online presence
-                and drive tangible results. We begin with a comprehensive
-                analysis, identifying opportunities for improvement and
-                tailoring a strategy to align with your business goals. Through
-                meticulous keyword research and on-page optimization, we ensure
-                your content ranks high on search engines, attracting the right
-                audience.
+              We kicked things off with 2 employe from India and now we’re proudly supporting overseas across industries like real estate, healthcare, construction, NGO, eCommerce, logistics, education, fitness, travel, restaurants, cosmetics, photography, production, legal services, and salons. We mix smart digital strategies with a human touch. It’s been 7 years of real results, happy clients, and exciting growth and we’re only getting started.
+
               </p>
             </div>
             </Motion>
@@ -206,7 +196,7 @@ const AboutUs = () => {
             >
             <div className={style.bottomLeft}>
               <p className={style.bottomTitle}>
-                The design <span>subscription</span> that connects you.
+                <span>Core concepts!</span>
               </p>
             </div>
             </Motion>
@@ -220,16 +210,13 @@ const AboutUs = () => {
               <div className={style.bottomRightBox}>
                 <FaCloudUploadAlt style={{color: 'var(--secondry-button-color)',marginTop: '6px', minWidth: '20px'}}/>
                 <p  className={style.bottomRightBoxTitle}>
-                  <span>Push to deploy.</span> Lorem ipsum, dolor sit amet
-                  consectetur adipisicingelit. Maiores impedit perferendis
-                  suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  <span>Frontend -</span> HTML, CSS, JavaScript, React.js, Tailwind CSS, Next.js, Figma.
                 </p>
               </div>
               <div className={style.bottomRightBox}>
               <FaLock style={{color: 'var(--secondry-button-color)',marginTop: '6px', minWidth: '20px'}}/>
                 <p className={style.bottomRightBoxTitle}>
-                  <span>SSL certificates.</span> Lorem ipsum, dolor sit amet
-                  consectetur adipisicingelit. 
+                  <span>Backend -</span> Node.js, Express.js, Django, Laravel, Spring Boot, Ruby on Rails, Flask.
                 </p>
               </div>
               <div className={style.bottomRightBox}>
