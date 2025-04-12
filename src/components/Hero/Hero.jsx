@@ -29,7 +29,7 @@ const Hero = () => {
           whileInView={{visibility: "visible", opacity: 1}}
           transition={{duration: 0.9}}
           exit={{visibility: "hidden", opacity: 0}}
-          >&quot;<em><b>Accelerate Your Online Growth,</b></em> Get Your Free Website & Marketing Consultation Today!&quot;
+          >&quot;Best web design agency and digital marketing service for your business growth!&quot;
           </motion.p>
           <PrimaryButton text={"Let's talk with me"} />
         </div>

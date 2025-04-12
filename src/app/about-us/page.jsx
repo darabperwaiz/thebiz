@@ -222,24 +222,22 @@ const AboutUs = () => {
               <div className={style.bottomRightBox}>
                 <FaHardDrive style={{color: 'var(--secondry-button-color)',marginTop: '6px', minWidth: '20px'}}/>
                 <p className={style.bottomRightBoxTitle}>
-                  <span>Database backups.</span> Lorem ipsum, dolor sit amet
-                  consectetur adipisicingelit. 
+                  <span>Database -</span> MongoDB, MySQL, PostgreSQL, Firebase, SQLite, Supabase, Redis. 
                 </p>
               </div>
               <div className={style.bottomRightBox}>
                 <FaHardDrive style={{color: 'var(--secondry-button-color)',marginTop: '6px', minWidth: '20px'}}/>
                 <p className={style.bottomRightBoxTitle}>
-                  <span>Database backups.</span> Lorem ipsum, dolor sit amet
-                  consectetur adipisicingelit. 
+                  <span>Security</span> SSL/TLS, Let’s Encrypt, JWT, OAuth 2.0, reCAPTCHA, Helmet.js, Cloudflare. 
                 </p>
               </div>
-              <div className={style.bottomRightBox}>
+              {/* <div className={style.bottomRightBox}>
                 <FaHardDrive style={{color: 'var(--secondry-button-color)',marginTop: '6px', minWidth: '20px'}}/>
                 <p className={style.bottomRightBoxTitle}>
                   <span>Database backups.</span> Lorem ipsum, dolor sit amet
                   consectetur adipisicingelit. 
                 </p>
-              </div>
+              </div> */}
             </div>
             </Motion>
           </div>

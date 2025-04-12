@@ -21,11 +21,11 @@ const ContactUs = () => {
             <div className={style.topTop}>
               <p>Contact Us</p>
               <p>
-                Want to Get in <span>Touch?</span>
+                Simplify Your Tech with a Free 30-minute Consultation Meeting!
               </p>
             </div>
             <p>
-            We love hearing from other people, whether they&apos;re our users or just curious about what we do. If you have any questions about our product or want to give us feedback (good or bad), don&apos;t hesitate to get in touch.
+            We love hearing from other people, whether they&apos;re our users or just curious about what we do. If you have any questions about our service or want to give us feedback (good or bad), don&apos;t hesitate to get in touch.
             </p>
           </div>
           <div className={style.mid}>
