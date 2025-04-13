@@ -30,13 +30,7 @@ const TableOne = ({title}) => {
               599 <span>$/Mo</span>
             </p>
             <p>Premium</p>
-          </td>
-          <td>
-            <p>
-              799 <span>$/Mo</span>
-            </p>
-            <p>High Value</p>
-          </td>
+          </td>        
         </tr>
         {/* Row 2 */}
         <tr className={style.row}>
@@ -50,9 +44,6 @@ const TableOne = ({title}) => {
           <td data-label="Premium">
             <span>Upto 20</span>
           </td>
-          <td data-label="High Value">
-            <span>Upto 30</span>
-          </td>
         </tr>
         {/* Row 3 */}
         <tr className={style.row}>
@@ -65,10 +56,7 @@ const TableOne = ({title}) => {
           </td>
           <td data-label="Premium">
             <span>30%</span>
-          </td>
-          <td data-label="High Value">
-            <span>35%</span>
-          </td>
+          </td> 
         </tr>
         {/* Row 4 */}
         <tr className={style.row}>
@@ -84,11 +72,6 @@ const TableOne = ({title}) => {
             </Link>
           </td>
           <td data-label="Premium">
-            <Link href="/" className={style.LinkBtn}>
-              Get Started
-            </Link>
-          </td>
-          <td data-label="High Value">
             <Link href="/" className={style.LinkBtn}>
               Get Started
             </Link>

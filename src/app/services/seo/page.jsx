@@ -83,7 +83,6 @@ const Seo = () => {
                     <Image src="/assets/images/tab_dashboard.svg" alt="tab_dashboard" width={300} height={300}/>
                 </div>
             </Benefits>
-            {/* <Seopackage /> */}
             <Seopackage />
             <Outcome data={outcomeData}/>
             <Roadmap  data={seoRoad}/>

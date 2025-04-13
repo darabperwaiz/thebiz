@@ -2,6 +2,7 @@ import React from "react";
 import style from "./maintable.module.css";
 import Link from "next/link";
 import CollapseTable from "./CollapseTable/CollapseTable";
+import data from "./tableData";
 
 const TableTwo = ({title}) => {
   return (
@@ -19,19 +20,19 @@ const TableTwo = ({title}) => {
           </td>
           <td>
             <p>
-              225 <span>$/Mo</span>
+              375 <span>$/Mo</span>
             </p>
             <p>Growth</p>
           </td>
           <td>
             <p>
-              225 <span>$/Mo</span>
+              599 <span>$/Mo</span>
             </p>
             <p>Premium</p>
           </td>
           <td>
             <p>
-              225 <span>$/Mo</span>
+              1099 <span>$/Mo</span>
             </p>
             <p>High Value</p>
           </td>
@@ -40,32 +41,32 @@ const TableTwo = ({title}) => {
         <tr className={style.row}>
           <td data-label="Package">Keyword Plan</td>
           <td data-label="Startup">
-            <span>Upto 25</span>
+            <span>Upto 15</span>
           </td>
           <td data-label="Growth">
             <span>Upto 25</span>
           </td>
           <td data-label="Premium">
-            <span>Upto 25</span>
+            <span>Upto 40</span>
           </td>
           <td data-label="High Value">
-            <span>Upto 25</span>
+            <span>Upto 75</span>
           </td>
         </tr>
         {/* Row 3 */}
         <tr className={style.row}>
           <td data-label="Package">Keywords Top 10 Guarantee(%)*</td>
           <td  data-label="Startup">
-            <span>25</span>
+            <span>20%</span>
           </td>
           <td data-label="Growth">
-            <span>25</span>
+            <span>25%</span>
           </td>
           <td data-label="Premium">
-            <span>25</span>
+            <span>30%</span>
           </td>
           <td data-label="High Value">
-            <span>25</span>
+            <span>35%</span>
           </td>
         </tr>
         {/* Row 4 */}
@@ -94,9 +95,10 @@ const TableTwo = ({title}) => {
         </tr>
         </tbody>
       </table>
-      {/* <CollapseTable />
-      <CollapseTable />
-      <CollapseTable /> */}
+      {data.map((tabledata, index)=> (
+        <CollapseTable key={index} data={tabledata}/>
+      ))}
+      
     </div>
   );
 };
