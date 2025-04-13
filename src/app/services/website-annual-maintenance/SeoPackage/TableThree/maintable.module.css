@@ -1,0 +1,126 @@
+.tableGap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.PackageTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.row td {
+    border: 1px solid rgba(67, 67, 67, 0.05);
+    text-align: center;
+}
+
+.row td:not(:nth-child(1)) {
+    background-color: #f6faff;
+}
+
+
+.row td:nth-child(1) {
+    background-color:#E9EFF8;
+    /* max-width: 410px; */
+}
+
+.row:nth-child(1) td {
+    padding: 32px 0;
+    color: var(--primary-color);
+}
+
+.row:not(:nth-child(1)) td {
+    padding: 10px;
+}
+
+.row:nth-child(1) td:nth-child(1) {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.125px;
+}
+
+.row:nth-child(1) td:not(:nth-child(1))>p:nth-child(1) {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.row:nth-child(1) td:not(:nth-child(1))>p:nth-child(1)>span {
+    color: #686868;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.row:nth-child(1) td:not(:nth-child(1))>p:nth-child(2) {
+    color: #1fae5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.row:nth-child(2) td, .row:nth-child(3) td {
+    font-size: 18px;
+    color: #686868;
+    font-weight: 400;
+}
+
+.row:nth-child(2) td:nth-child(1), .row:nth-child(3) td:nth-child(1) {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.row:nth-child(4) td>a, .row:nth-child(6) td>a {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: var(--secondry-button-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .PackageTable, 
+    .PackageTable tr, 
+    .PackageTable td {
+      display: block;
+      width: 100%;
+    }
+  
+    .PackageTable tr {
+      margin-bottom: 15px;
+    }
+  
+    .PackageTable td {
+      text-align: left;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .PackageTable td:before {
+      content: attr(data-label);
+      position: absolute;
+      right: 10px;
+      /* font-weight: bold; */
+      text-transform: uppercase;
+    }
+
+    .row td:not(:nth-child(1)) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+  }
+
+
+
+
+
+
+

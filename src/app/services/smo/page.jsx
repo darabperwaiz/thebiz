@@ -8,9 +8,9 @@ import Outcome from "@/components/outcome/Outcome";
 import Banner2 from "@/components/Banner2/Banner2";
 import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
-import Seopackage from "@/components/SeoPackage/Seopackage";
 import Roadmap from "@/components/Roadmap/Roadmap";
 import { smodata } from "./SmoRoadmapdata";
+import Seopackage from "./SeoPackage/Seopackage";
 
 const outcomeData = [
   {
