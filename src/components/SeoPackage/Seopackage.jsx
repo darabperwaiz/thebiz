@@ -31,7 +31,7 @@ const Seopackage = () => {
           exit={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.3 }}
           >
-            <MainTable title="National SEO Packages"/>
+            <MainTable title="Local SEO Packages"/>
           </motion.div>
         )}
         {tab === 2 && (

@@ -34,8 +34,8 @@ const ContactUs = () => {
                 <p>THUS YOUR BRAND WILL TRANSFORM FROM BLAND TO <span>BUZZWORTHY.</span><br />Our all ears and mind are here for you.</p>
                 <div className={style.address}>
                     <div className={style.addressWrapper}>
-                        <p><span><LuPhoneCall /></span><span>+91 9501041005</span></p>
-                        <p><span><LuMail /></span><span>hello@alphamw.com</span></p>
+                        <p><span><LuPhoneCall /></span><span>+1 512 737 6415</span></p>
+                        <p><span><LuMail /></span><span>support@appearisttechnology.com</span></p>
                         <p><span><LuMap /></span><span>Plot No. 29 Sector 82 <br />JLPL Ind Zone, Mohali<br />Punjab 160055 IND.</span></p>
                     </div>
                     <LearnMoreBtn text={'Careers'}  color={'orange'} url="#"/>
@@ -45,14 +45,22 @@ const ContactUs = () => {
                 <input className="" type="text" placeholder="Full Name *"/>
                 <input type="text" placeholder="Email Address *"/>
                 <input type="text" placeholder="Company Name *"/>
+                <select name="" id="">
+                  <option value="">Choose Service</option>
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                  <option value="">Option 4</option>
+                  
+                </select>
                 <textarea name="" id="" placeholder="How can we help you?"></textarea>
                 <button>Explore Our Agency <FaAngleRight /></button>
             </div>
           </div>
           <div className={style.bottom}>
-            <Image src="/assets/images/slide_images/map.png" width={1500} height={500} alt="" quality={100}/>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27459.352171798535!2d76.7079953672616!3d30.65032712059332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390febe04db96aa9%3A0xf28a663f1aafa0a4!2sSector%2082%2C%20JLPL%20Industrial%20Area%2C%20Punjab%20140308!5e0!3m2!1sen!2sin!4v1744497168729!5m2!1sen!2sin" width="100%" height="500" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div className={style.last}>
+          {/* <div className={style.last}>
             <div className={style.FeedBack}>
               <p>Send us Product Feedback</p>
               <p>As a user of AMW, you can send us product feedback in Canny. You can also see which new features people are requesting and what we are currently working on.</p>
@@ -63,7 +71,7 @@ const ContactUs = () => {
               <p>As a user of AMW, you can send us product feedback in Canny. You can also see which new features people are requesting and what we are currently working on.</p>
               <Link href="#">Send Feedback <FaArrowRight /> </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section>

@@ -99,7 +99,8 @@
 
 .midRight > input,
 .midRight > textarea,
-.midRight > button {
+.midRight > button,
+.midRight > select {
   border: none;
   padding: 14px 23px;
   border-radius: 4px;

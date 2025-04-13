@@ -18,8 +18,8 @@ const Portfolio = () => {
       <div className={style.portfolioWrapper}>
           <div className={style.top}>
             <p>Portfolio</p>
-            <p>Want to Get in <span>Touch?</span></p>
-            <p>thus your brand will transform from bland to <span>buzzworthy.</span> our all ears and mindare here for you.</p>
+            <p>See What We&apos;ve designed!</p>
+            <p>From sleek websites and mobile applications to powerful software solutions, our work speaks for itself. Check out how we&apos;ve helped brands grow, engage, and stand out in the digital world.</p>
           </div>
           <Porfolios limit={12} />
       </div>

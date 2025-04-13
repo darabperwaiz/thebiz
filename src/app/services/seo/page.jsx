@@ -8,9 +8,9 @@ import Ceo from "@/components/CEO/Ceo"
 import ServiceHeaderWrapper from "@/components/ServiceHeaderWrapper/ServiceHeaderWrapper"
 import Benefits from "@/components/benefitsWrapper/Benefits"
 import Outcome from "@/components/outcome/Outcome"
-import Seopackage from "@/components/SeoPackage/Seopackage"
 import Roadmap from "@/components/Roadmap/Roadmap"
 import { seoRoad } from "./seoRoadMap"
+import Seopackage from "./SeoPackage/Seopackage"
 
 const outcomeData = [
   {
@@ -77,12 +77,13 @@ const Seo = () => {
             <Benefits 
             tag="Benefits" 
             title={<>SEO service that meets your marketing needs!</>} 
-            des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis, keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
+            des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis,in depth keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
             >
                 <div className="imgflex">
                     <Image src="/assets/images/tab_dashboard.svg" alt="tab_dashboard" width={300} height={300}/>
                 </div>
             </Benefits>
+            {/* <Seopackage /> */}
             <Seopackage />
             <Outcome data={outcomeData}/>
             <Roadmap  data={seoRoad}/>
