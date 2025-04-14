@@ -20,11 +20,11 @@ const ParticleRing = () => {
       {/* We create enough scroll space for zoom */}
       <div >
         <Canvas
-          camera={{ position: [40, -10, 60], fov: 50  }}
+          camera={{ position: [40, -5, 60], fov: 50  }}
           style={{  height: "80vh" }}
           className="bg-slate-900"
         >
-          <OrbitControls enabled={false} maxDistance={30} minDistance={15}/>
+          <OrbitControls enabled={false} maxDistance={10} minDistance={5}/>
           <directionalLight />
           <pointLight position={[-30, 0, -30]} power={10.0} />
           <ScrollZoom scrollRef={scrollRef} />
@@ -50,9 +50,9 @@ const ScrollZoom = ({ scrollRef }) => {
     const t = Math.min(scrollY / maxScroll, 1); // value between 0 and 1
 
     // Interpolate from [200, -50.5, 200] to [0, 0, 20]
-    camera.position.x = 40 * (1 - t);
-    camera.position.y = -10 * (1 - t);
-    camera.position.z = 60 * (1 - t) + 20 * t;
+    camera.position.x = 20 * (1 - t);
+    camera.position.y = 0 * (1 - t);
+    camera.position.z = 40 * (1 - t) + 20 * t;
     camera.updateProjectionMatrix();
   });
 
