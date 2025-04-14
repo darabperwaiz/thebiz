@@ -21,7 +21,7 @@ const ParticleRing = () => {
       <div >
         <Canvas
           camera={{ position: [40, -10, 60], fov: 50  }}
-          style={{  height: "100vh" }}
+          style={{  height: "80vh" }}
           className="bg-slate-900"
         >
           <OrbitControls enabled={false} maxDistance={30} minDistance={15}/>
