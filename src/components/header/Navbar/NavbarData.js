@@ -25,14 +25,6 @@ export const menuItemsData = [
               url: 'web-development'
             },
             {
-              title: 'Link Building',
-              url: 'link-building'
-            },
-            {
-              title: 'Content Writing',
-              url: 'content-writing'
-            },
-            {
               title: 'Sales Funnel Fixing',
               url: 'sales-funnel-fixing'
             },
@@ -47,20 +39,28 @@ export const menuItemsData = [
           title: 'Digital Marketing',
           menuItems: [
             {
-              title: "SEO",
+              title: "Search engines optimization",
               url: "seo",
             },
             {
-              title: "SMO",
+              title: "Social media marketing",
               url: "smo",
             },
             {
-              title: "GMB",
+              title: "Google my business",
               url: "gmb",
             },
             {
               title: 'CRM',
               url: 'crm'
+            },
+            {
+              title: 'Content Writing',
+              url: 'content-writing'
+            },
+            {
+              title: 'Link Building',
+              url: 'link-building'
             },
     
           ]
