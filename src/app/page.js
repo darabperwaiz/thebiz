@@ -16,11 +16,13 @@ import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
 import Roadmap from "@/components/Roadmap/Roadmap";
 import { homeRoad } from "./homeRoadmap";
+import ParticleRing from "@/components/Header3d/ParticleRing";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
+      <ParticleRing />
       <section className={style.middle}>
         <div className="container">
           <Banner />

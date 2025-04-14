@@ -1,10 +1,14 @@
 .wrapper {
   /* have to fix image link */
-  background-image: url(/assets/images/image106.webp);
+  /* background-image: url(/assets/images/image106.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* background-position-y: 72px; */
-  background-position: center 105px;
+  /* background-position: center 105px; */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .container {
