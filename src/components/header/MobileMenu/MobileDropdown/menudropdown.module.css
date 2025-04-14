@@ -26,4 +26,21 @@
    visibility: visible;
 }
 
+.menusWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menusWrapper>p {
+    text-align: center;
+    margin-top: 10px;
+    color: #040404;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+}
+
 
