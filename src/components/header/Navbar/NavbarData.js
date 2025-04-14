@@ -12,46 +12,58 @@ export const menuItemsData = [
     {
       title: "Services",
       // url: "services",
-      submenu: [
+      submenu : [
         {
-          title: "SEO",
-          url: "seo",
+          title: 'Design Services',
+          menuItems: [
+            {
+              title: 'App Development',
+              url: 'app-development'
+            },
+            {
+              title: 'Website Development',
+              url: 'web-development'
+            },
+            {
+              title: 'Link Building',
+              url: 'link-building'
+            },
+            {
+              title: 'Content Writing',
+              url: 'content-writing'
+            },
+            {
+              title: 'Sales Funnel Fixing',
+              url: 'sales-funnel-fixing'
+            },
+            {
+              title: 'Website Annual Maintenance',
+              url: 'website-annual-maintenance'
+            }    
+    
+          ]
         },
         {
-          title: "SMO",
-          url: "smo",
-        },
-        {
-          title: "GMB",
-          url: "gmb",
-        },
-        {
-          title: 'CRM',
-          url: 'crm'
-        },
-        {
-          title: 'App Development',
-          url: 'app-development'
-        },
-        {
-          title: 'Website Development',
-          url: 'web-development'
-        },
-        {
-          title: 'Link Building',
-          url: 'link-building'
-        },
-        {
-          title: 'Content Writing',
-          url: 'content-writing'
-        },
-        {
-          title: 'Sales Funnel Fixing',
-          url: 'sales-funnel-fixing'
-        },
-        {
-          title: 'Website Annual Maintenance',
-          url: 'website-annual-maintenance'
+          title: 'Digital Marketing',
+          menuItems: [
+            {
+              title: "SEO",
+              url: "seo",
+            },
+            {
+              title: "SMO",
+              url: "smo",
+            },
+            {
+              title: "GMB",
+              url: "gmb",
+            },
+            {
+              title: 'CRM',
+              url: 'crm'
+            },
+    
+          ]
         }
       ],
     },

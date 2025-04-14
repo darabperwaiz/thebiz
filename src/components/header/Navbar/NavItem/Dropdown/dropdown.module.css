@@ -4,33 +4,52 @@
     /* flex-direction: column; */
     grid-template-columns: 1fr 1fr;
     top: 100%;
-    left: -100px;
+    left: -220%;
     opacity: 0;
     background-color: #ffff;
     border-radius: 10px;
     border: 2px solid #dedede;
     width: 500px;
     text-align: center;
-    gap: 5px;
+    /* gap: 5px; */
     visibility: hidden;
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
+    /* padding: 10px 0; */
+    transform: translateY(10%);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.menusWrapper {
+    border-right: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menusWrapper>p {
+    padding: 14px;
+    border-bottom: 1px solid gainsboro;
+}
+.menuItems {
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown a {
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px;
     color: var(--primary-color);
 }
 
 .dropdown a:hover {
-    background-color: #FBFBFB;
+    background-color: #e8e8e8;
     color: #2D46BE;
 }
 
-.show {
+.dropdown.show {
     visibility: visible;
     opacity: 1;
+    transform: translateY(0);
     /* transition: opacity visibilty 0.5s linear; */
 }
 

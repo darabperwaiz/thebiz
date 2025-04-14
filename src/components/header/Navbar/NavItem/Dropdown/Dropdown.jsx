@@ -11,7 +11,16 @@ const Dropdown = ({submenus, isDropdown, setIsDropdown}) => {
   return (
     <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={`${style.dropdown} ${isDropdown ? style.show : ''}`}>
      {submenus.map((submenu, index)=> (
-      <a href={`/services/${submenu.url}`} key={index}>{submenu.title}</a>
+      <div className={style.menusWrapper} key={index}>
+        <p>{submenu.title}</p>
+        <div className={style.menuItems}>
+        {submenu.menuItems.map((item, index)=> (
+          <a href={`/services/${item.url}`} key={index}>{item.title}</a>
+        ))}
+        </div>
+        
+      </div>
+      
      ))}
     </div>
   )
