@@ -27,7 +27,7 @@ export const Card = ({data, index}) => {
         <p>{data.title}</p>
       </div>
       <div className={isActive? `${style.hide} ${style.cardRight}` : `${style.hide}`}>
-        <div className={isActive ? `${style.hide} ${style.cardRightLeft}` : `${style.hide}`}>
+        <div className={''}>
           <p>
             {data.description}
           </p>

@@ -28,7 +28,7 @@
   width: 50%;
   height: 0;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out, overflow 0.5s ease-in-out;
     
 }
 
@@ -39,8 +39,7 @@
   justify-content: flex-end;
   height: 100px;
   width: 50%;
-  overflow: visible;
-  transition: height 0.5s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }
 
 .cardRightLeft {
@@ -51,7 +50,7 @@
   width: 100%;
   /* overflow: visible; */
   /* display: none; */
-  transition: height 0.5s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }
 
 .cardRightLeft > p {
@@ -89,5 +88,6 @@
 
   .hide {
     order: 3;
+    width: 100%;
   }
 }

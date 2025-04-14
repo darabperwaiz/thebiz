@@ -19,7 +19,7 @@ const Tabview = () => {
   return (
     <div className={style.tabsWrapper}>
     <div className={style.tabs}>
-      <div onClick={(e)=> handleTab(e, 1)} className={toggleState === 1 ? `${style.tab} ${style.active}`: `${style.tab}`}>Services Offered {toggleState === 1 ? (<motion.div className={style.underline} layoutId={style.underline}/>) : null}</div>
+      <div onClick={(e)=> handleTab(e, 1)} className={toggleState === 1 ? `${style.tab} ${style.active}`: `${style.tab}`}>Design Services {toggleState === 1 ? (<motion.div className={style.underline} layoutId={style.underline}/>) : null}</div>
       <div onClick={(e)=> handleTab(e, 2)} className={toggleState === 2 ? `${style.tab} ${style.active}`: `${style.tab}`}>Digital Marketing {toggleState === 2 ? (<motion.div className={style.underline} layoutId={style.underline}/>) : null}</div>
     </div>
     <AnimatePresence mode="wait">
