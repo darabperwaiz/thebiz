@@ -9,7 +9,7 @@ const Outcome = ({data}) => {
         <p><span>Outcome</span> Results<br />Estimate</p>
       <div className={style.bottom}>
         {data.map((item, index) => (
-          <OutCard title={item.title} description={item.description} key={index}/>
+          <OutCard title={item.title} description={item.description} key={index} index={index}/>
         ))}
       </div>
     </div>

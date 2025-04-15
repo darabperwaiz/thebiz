@@ -3,10 +3,10 @@ import style from './smallCard.module.css'
 import Image from "next/image"
 import { motion } from "framer-motion"
 
-const SmallCard = ({key, title, des, icon}) => {
+const SmallCard = ({index, title, des, icon}) => {
   return (
     <motion.div
-    key={key}
+    key={index}
     initial={{opacity: 0, x: -100}}
     whileInView={{opacity: 1, x: 0}}
     exit={{opacity: 0, x: 100}}
