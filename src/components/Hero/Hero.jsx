@@ -12,11 +12,10 @@ const Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0.8,
-          ease: [0.25, 0.8, 0.25, 1], // smoother easing
+          duration: 0.5,
+          easings: ['easeIn', 'easeOut'], // smoother easing
         }}
-        viewport={{ once: true, amount: 0.6 }}
-        style={{ willChange: 'opacity, transform' }}
+        viewport={{ once: true, amount: 0.3 }}
         >
           <div className={style.header}>
           <h1>Best <span>web design </span> agency, <br /> and <span>digital marketing</span> service for your business growth!</h1>

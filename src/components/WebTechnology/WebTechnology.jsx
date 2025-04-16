@@ -21,9 +21,13 @@ const WebTechnology = () => {
     <div className={style.technology}>
       <div className={style.top}>
         <motion.p
-        initial={{opacity: 0, x: 100}}
-        whileInView={{opacity: 1, x: 0}}
-        transition={{ duration: 0.9}}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          easings: ['easeIn', 'easeOut'], // smoother easing
+        }}
+        viewport={{ amount: 0.8 }}
         
         ><b>Web</b> Technology</motion.p>
       </div>
@@ -33,11 +37,13 @@ const WebTechnology = () => {
                 {webTechData.map((item, index)=> (
                     <motion.li
                     key={index}
-                    initial={{opacity: 0, x: -100}}
-                    whileInView={{opacity: 1, x: 0}}
-                    exit={{opacity:0, x:100}}
-                    transition={{duration: 0.9}}
-                    viewport={{once: true}}
+                    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{
+      duration: 0.5,
+      easings: ['easeIn', 'easeOut'], // smoother easing
+    }}
+    viewport={{ amount: 0.8 }}
                     className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} onClick={()=> handleClick(item, index)} >{item.tag}</motion.li>
                 ))}
             </motion.ul>

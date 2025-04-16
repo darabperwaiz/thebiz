@@ -1,13 +1,22 @@
 import React from "react";
 import style from "./ourclients.module.css";
 import Image from "next/image";
+import {motion} from 'framer-motion'
 
 const OurClients = () => {
   return (
     <div className={style.ourClients}>
-      <p className={style.title}>
+      <motion.p className={style.title}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.5,
+        easings: ['easeIn', 'easeOut'], // smoother easing
+      }}
+      viewport={{ amount: 0.8 }}
+      >
         Our <span>Clients</span>
-      </p>
+      </motion.p>
       <div className={style.icons}>
         <div className={style.icon}>
           <Image

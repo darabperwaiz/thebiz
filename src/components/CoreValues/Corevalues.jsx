@@ -1,13 +1,21 @@
 import React from 'react'
 import style from './corevalues.module.css'
 import SmallCard from "../smallcard/SmallCard"
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 
 const Corevalues = () => {
   return (
     <div className={style.coreValues}>
       <div className={style.top}>
-        <p className={style.title}>Our <span>Core</span> Values</p>
+        <motion.p className={style.title}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          easings: ['easeIn', 'easeOut'], // smoother easing
+        }}
+        viewport={{ amount: 0.5 }}
+        >Our <span>Core</span> Values</motion.p>
       </div>
       <div className={style.bottom}>
         <AnimatePresence>

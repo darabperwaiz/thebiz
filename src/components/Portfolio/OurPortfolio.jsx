@@ -8,15 +8,17 @@ import { AnimatePresence, motion } from "framer-motion"
 const OurPortfolio = () => {
   
   return (
-    <AnimatePresence>
     <div className={style.OurPortfolio}>
       <div className={style.top}>
         <div>
             <motion.p
-            initial={{opacity: 0, x: 100}}
-            whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -100}}
-            transition={{duration: 0.7}}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.5,
+              easings: ['easeIn', 'easeOut'], // smoother easing
+            }}
+            viewport={{ once: true, amount: 0.8 }}
             className={style.head}>Our <span>Portfolio</span></motion.p>
         </div>
       </div>
@@ -25,7 +27,6 @@ const OurPortfolio = () => {
         <PrimaryButton text={"View our all projects"}/>
       </div>
     </div>
-    </AnimatePresence>
   )
 }
 

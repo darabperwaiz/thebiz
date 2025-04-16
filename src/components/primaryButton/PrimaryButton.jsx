@@ -6,18 +6,14 @@ import style from "./PrimaryButton.module.css";
 import { motion } from "framer-motion";
 const PrimaryButton = ({ text }) => {
   return (
-    <motion.button
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.9 }}
+    <button
       className={style.button}
     >
       <span>{text}</span>
       <span>
         <FaArrowRightLong />
       </span>
-    </motion.button>
+    </button>
   );
 };
 
