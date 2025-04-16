@@ -6,36 +6,28 @@ import PrimaryButton from "../primaryButton/PrimaryButton";
 import { AnimatePresence, motion } from "framer-motion";
 const Hero = () => {
   return (
-    <AnimatePresence>
     <div className={style.wrapper}>
       <div className={style.container}>
-        <div className={style.heroContainer}>
+        <motion.div className={style.heroContainer}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: [0.25, 0.8, 0.25, 1], // smoother easing
+        }}
+        viewport={{ once: true, amount: 0.6 }}
+        style={{ willChange: 'opacity, transform' }}
+        >
           <div className={style.header}>
-          <motion.h1
-          initial={{visibility: "hidden", x: -100}}
-          whileInView={{visibility: "visible", x: 0}}
-          transition={{duration: 0.9}}
-          exit={{x: 100}}
-          >APPEARIST TECHNOLOGY</motion.h1>
-          <motion.h2
-          initial={{visibility: "hidden", x: 100}}
-          whileInView={{visibility: "visible", x: 0}}
-          transition={{duration: 0.9}}
-          exit={{x: -100}}
-          >CRAFT YOUR DIGITAL JOURNEY THE WAY YOU IMAGINE</motion.h2>
+          <h1>Best <span>web design </span> agency, <br /> and <span>digital marketing</span> service for your business growth!</h1>
+          {/* <h2>CRAFT YOUR DIGITAL JOURNEY THE WAY YOU IMAGINE</h2> */}
+          <p className={style.tagline}>&quot;<span>Accelerate Your Online Growth,</span> Get Your Website & Marketing Consultation Today!&quot;</p>
           </div>
-          <motion.p
-          initial={{visibility: "hidden", opacity: 0}}
-          whileInView={{visibility: "visible", opacity: 1}}
-          transition={{duration: 0.9}}
-          exit={{visibility: "hidden", opacity: 0}}
-          >&quot;Best web design agency and digital marketing service for your business growth!&quot;
-          </motion.p>
           <PrimaryButton text={"Let's talk with me"} />
-        </div>
+        </motion.div>
       </div>
     </div>
-    </AnimatePresence>
+
   );
 };
 

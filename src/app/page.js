@@ -1,6 +1,7 @@
 "use client"
 
 import style from "./page.module.css";
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero/Hero";
 import Banner from "@/components/Banner/Banner";
 import BrandIcons from "@/components/BrandIcons/BrandIcons";
@@ -16,7 +17,11 @@ import Contact from "@/components/Contact/Contact";
 import Ceo from "@/components/CEO/Ceo";
 import Roadmap from "@/components/Roadmap/Roadmap";
 import { homeRoad } from "./homeRoadmap";
-import ParticleRing from "@/components/Header3d/ParticleRing";
+// import ParticleRing from "@/components/Header3d/ParticleRing";
+
+const ParticleRing = dynamic(()=> import('../components/Header3d/ParticleRing'), {
+  ssr: true,
+})
 
 export default function Home() {
   return (
