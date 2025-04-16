@@ -36,7 +36,7 @@ const ParticleRing = () => {
   );
 };
 
-const ScrollZoom = React.memo(({ scrollRef }) => {
+const ScrollZoomComponent = ({ scrollRef }) => {
   const { camera } = useThree();
 
   useFrame(() => {
@@ -46,42 +46,43 @@ const ScrollZoom = React.memo(({ scrollRef }) => {
   });
 
   return null;
-});
+};
+ScrollZoomComponent.displayName = "ScrollZoom";
+const ScrollZoom = React.memo(ScrollZoomComponent);
 
-const PointCircle = React.memo(() => {
+
+const PointCircleComponent = () => {
   const groupRef = useRef(null);
   const mouse = useRef({ x: 0, y: 0 });
 
-  const softColor = new THREE.Color("#2d46be"); // light blue
+  const softColor = new THREE.Color("#2d46be");
 
-const allPoints = useMemo(() => {
-  const inner = pointsInner.slice(0, 1500).map((p) => ({
-    ...p,
-    color: softColor,
-  }));
-  const outer = pointsOuter.slice(0, 500).map((p) => ({
-    ...p,
-    color: softColor,
-  }));
-  return [...inner, ...outer];
-}, []);
-
+  const allPoints = useMemo(() => {
+    const inner = pointsInner.slice(0, 1500).map((p) => ({
+      ...p,
+      color: softColor,
+    }));
+    const outer = pointsOuter.slice(0, 500).map((p) => ({
+      ...p,
+      color: softColor,
+    }));
+    return [...inner, ...outer];
+  }, []);
 
   const geometry = useMemo(() => new THREE.SphereGeometry(0.1, 6, 6), []);
   const material = useMemo(
     () =>
       new THREE.MeshStandardMaterial({
         transparent: true,
-        opacity: 0.3, // Lower for more fade
+        opacity: 0.3,
         roughness: 1,
         metalness: 0,
         emissiveIntensity: 1.5,
-        blending: THREE.AdditiveBlending, // Smooth blending with background
-        depthWrite: false, // Prevent z-buffer artifacts with transparency
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
       }),
     []
   );
-  
 
   useEffect(() => {
     let raf = null;
@@ -127,7 +128,10 @@ const allPoints = useMemo(() => {
       </Instances>
     </group>
   );
-});
+};
+PointCircleComponent.displayName = "PointCircle";
+const PointCircle = React.memo(PointCircleComponent);
+
 
 export default React.memo(ParticleRing);
 
