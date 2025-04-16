@@ -19,7 +19,7 @@ export const Card = ({data, index}) => {
         // return () => {
             
         // };
-    }, []);
+    }, [index]);
   return (
     <div className={style.card}>
       <div className={style.cardLeft}>
