@@ -1,24 +1,33 @@
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
+const ScrollAnimationBox = ({ children, delay = 0 }) => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { threshold: 0.8 }); // 60% visible
+  const controls = useAnimation();
 
-import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-
-const ScrollAnimationBox = ({children}) => {
-  // useScroll provides the scrollY value, which tracks the vertical scroll position
-  const { scrollY } = useScroll();
-
-  // useTransform maps the scrollY position to opacity and translateY values
-  const opacity = useTransform(scrollY, [0, 300], [0, 1]); // Fades in as you scroll down
-  const translateY = useTransform(scrollY, [0, 300], [100, 0]); // Moves up as you scroll down
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.6,
+          ease: "easeOut",
+          delay,
+        },
+      });
+    } else {
+      controls.start({ opacity: 0, y: 50 });
+    }
+  }, [inView, controls, delay]);
 
   return (
     <motion.div
-      style={{
-        opacity: opacity,                 // Applies the opacity transform
-        y: translateY,                    // Applies the translateY transform
-      }}
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={controls}
     >
-      {/* Content goes here */}
       {children}
     </motion.div>
   );
