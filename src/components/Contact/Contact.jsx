@@ -7,17 +7,15 @@ import { FaArrowRightLong } from "react-icons/fa6"
 import Link from "next/link";
 import { Button } from "../Button/Button";
 import { AnimatePresence, motion } from "framer-motion";
+import ScrollAnimationBox from "../ScrollAnimationBox";
 
 
 const Contact = () => {
   return (
-    <AnimatePresence>
+    <ScrollAnimationBox delay={0.5}>
     <div className={style.contact}>
-      <motion.div
-      initial={{opacity: 0, x: -100}}
-      whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: 100}}
-      transition={{duration: 0.9}}
+      <div
+      
       className={style.left}>
         <div className={style.topLeft}>
           <p className={style.head}>Contact Us</p>
@@ -46,12 +44,9 @@ const Contact = () => {
           </Link>
           <Button text={"Get A Proposal"} />
         </div>
-      </motion.div>
-      <motion.div
-      initial={{opacity: 0, x: 100}}
-      whileInView={{opacity: 1, x: 0}}
-      exit={{opacity: 0, x: -100}}
-      transition={{duration: 0.9}}
+      </div>
+      <div
+     
       className={style.right}>
         <div className={style.rightTop}>
           <p>More About you</p>
@@ -77,9 +72,9 @@ const Contact = () => {
           <textarea className={style.input} name="" id="" placeholder="Your messages"></textarea>
         </form>
         <button className={style.button}>Schedule Now <span><FaArrowRightLong /></span></button>
-      </motion.div>
+      </div>
     </div>
-    </AnimatePresence>
+    </ScrollAnimationBox>
   );
 };
 
