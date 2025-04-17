@@ -3,20 +3,40 @@
   padding: 50px 0;
   background-repeat: no-repeat;
   background-position: right top;
+  animation: bounce 5s ease-in-out alternate infinite;
+}
+
+@keyframes bounce {
+  from {
+    background-position: right top;
+  }
+  to {
+    background-position: right 10%;
+  }
 }
 
 .projects {
   background-image: url('/assets/images/vectorCopy.svg');
   padding: 50px 0;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: left bottom;
+  animation: bounce2 5s ease-in-out alternate infinite;
+}
+
+@keyframes bounce2 {
+  from {
+    background-position: left bottom;
+  }
+  to {
+    background-position: left 200px;
+  }
 }
 
 .corevalue {
-  background: url('/assets/images/vector.svg');
+  /* background: url('/assets/images/vector.svg');
   padding: 50px 0;
   background-repeat: no-repeat;
-  background-position: right 250px;
+  background-position: right 250px; */
   margin: 48px 0;
 }
 
