@@ -1,13 +1,13 @@
 .footer {
   width: 100%;
   background: #F3F2F6;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .footerWrapper {
     display: flex;
     justify-content: space-between; 
-    padding: 54px 0px 12px 0px; 
+    padding: 30px 0px 12px 0px; 
     flex-wrap: wrap;
     gap: 40px;  
 }
@@ -25,7 +25,7 @@
 
 .paragraph {
     color: var(--secodry-color);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     max-width: 340px;
 }
@@ -73,13 +73,13 @@
 .links {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .links>a {
     color: var(--secodry-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
 }
 
