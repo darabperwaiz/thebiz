@@ -40,11 +40,11 @@
     transition: all 0.3s linear;
 }
 
-.icons>div:nth-child(3) {
+.icon3 {
     background: #1A2C3D;
 }
 
-.icons>div:nth-child(5), .icons>div:nth-child(6){
+.icon5, .icon6{
     background: #000;
 }
 

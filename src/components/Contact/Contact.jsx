@@ -12,10 +12,15 @@ import ScrollAnimationBox from "../ScrollAnimationBox";
 
 const Contact = () => {
   return (
-    <ScrollAnimationBox delay={0.5}>
     <div className={style.contact}>
-      <div
-      
+      <motion.div
+       initial={{ opacity: 0, y: 50 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{
+         duration: 0.5,
+         easings: ['easeIn', 'easeOut'], // smoother easing
+       }}
+       viewport={{ amount: 0.6, once: true }}
       className={style.left}>
         <div className={style.topLeft}>
           <p className={style.head}>Contact Us</p>
@@ -44,9 +49,15 @@ const Contact = () => {
           </Link>
           <Button text={"Get A Proposal"} />
         </div>
-      </div>
-      <div
-     
+      </motion.div>
+      <motion.div
+       initial={{ opacity: 0, y: 50 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{
+         duration: 0.5,
+         easings: ['easeIn', 'easeOut'], // smoother easing
+       }}
+       viewport={{ amount: 0.6, once: true }}
       className={style.right}>
         <div className={style.rightTop}>
           <p>More About you</p>
@@ -72,9 +83,8 @@ const Contact = () => {
           <textarea className={style.input} name="" id="" placeholder="Your messages"></textarea>
         </form>
         <button className={style.button}>Schedule Now <span><FaArrowRightLong /></span></button>
-      </div>
+      </motion.div>
     </div>
-    </ScrollAnimationBox>
   );
 };
 

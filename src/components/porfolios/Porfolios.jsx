@@ -70,11 +70,13 @@ const Porfolios = ({ limit = 6 }) => {
       </div>
       <AnimatePresence mode="wait">
         <motion.div
-        initial={{opacity: 0, x: -100}}
-        whileInView={{opacity: 1, x: 0}}
-        transition={{duration: 0.7}}
-        exit={{opacity: 0, x: 100}}
-        viewport={{once: true}}
+         initial={{ opacity: 0, y: 50 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{
+           duration: 0.5,
+           easings: ['easeIn', 'easeOut'], // smoother easing
+         }}
+         viewport={{ amount: 0.6, once: true }}
         className={style.mid}>
           {projects.map(
             (t, i) =>

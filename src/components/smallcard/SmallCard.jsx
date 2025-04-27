@@ -13,7 +13,7 @@ const SmallCard = ({index, title, des, icon}) => {
       duration: 0.5,
       easings: ['easeIn', 'easeOut'], // smoother easing
     }}
-    viewport={{ amount: 0.8 }}
+    viewport={{ amount: 0.6, once: true }}
     className={style.card}>
       <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -22,7 +22,7 @@ const SmallCard = ({index, title, des, icon}) => {
         duration: 0.5,
         easings: ['easeIn', 'easeOut'], // smoother easing
       }}
-      viewport={{ amount: 0.2 }}
+      viewport={{ amount: 0.6, once: true }}
       className={style.top}>
         <Image src={`/assets/images/corevalue/${icon}`} alt="" width={100} height={100}/>
       </motion.div>

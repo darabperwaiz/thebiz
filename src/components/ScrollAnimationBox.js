@@ -25,7 +25,7 @@ const ScrollAnimationBox = ({ children, delay = 0 }) => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 80 }}
+      initial={{ opacity: 0, y: 50 }}
       animate={controls}
     >
       {children}

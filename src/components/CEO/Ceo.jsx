@@ -10,9 +10,17 @@ import ScrollAnimationBox from "../ScrollAnimationBox"
 
 const Ceo = () => {
   return (
-    <ScrollAnimationBox delay={0.3}>
+    
     <div className={style.ceo}>
-      <div className={style.left}>
+      <motion.div className={style.left}
+       initial={{ opacity: 0, y: 50 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{
+         duration: 0.5,
+         easings: ['easeIn', 'easeOut'], // smoother easing
+       }}
+       viewport={{ amount: 0.6, once: true }}
+      >
         <div
         
         className={style.curve}></div>
@@ -34,8 +42,16 @@ const Ceo = () => {
            
             >Founder and CEO</p>
         </div>
-      </div>
-      <div className={style.right}>
+      </motion.div>
+      <motion.div className={style.right}
+       initial={{ opacity: 0, y: 50 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{
+         duration: 0.5,
+         easings: ['easeIn', 'easeOut'], // smoother easing
+       }}
+       viewport={{ amount: 0.6, once: true }}
+      >
         <p
         
         >A Message From CEO</p>
@@ -47,9 +63,8 @@ const Ceo = () => {
         </div>
         <Image className={style.quote} src="/assets/images/quoteRight.svg" alt="" width={31} height={31} />
         <LearnMoreBtn text={"learn more"} url={'#'} color={'blue'} />
-      </div>
+      </motion.div>
     </div>
-    </ScrollAnimationBox>
   )
 }
 

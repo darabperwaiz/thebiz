@@ -6,6 +6,7 @@ import { servicesData } from "./servicesData"
 import { digitalData } from "./digitalData"
 import { Card } from "../Card/Card"
 import { AnimatePresence, motion } from "framer-motion"
+import ScrollAnimationBox from "../ScrollAnimationBox"
 
 const Tabview = () => {
     const [toggleState, setToggleState] = useState(1)
@@ -17,6 +18,7 @@ const Tabview = () => {
 
     }
   return (
+    <ScrollAnimationBox>
     <div className={style.tabsWrapper}>
     <div className={style.tabs}>
       <div onClick={(e)=> handleTab(e, 1)} className={toggleState === 1 ? `${style.tab} ${style.active}`: `${style.tab}`}>Design Services {toggleState === 1 ? (<motion.div className={style.underline} layoutId={style.underline}/>) : null}</div>
@@ -55,6 +57,7 @@ const Tabview = () => {
     )}
     </AnimatePresence>
     </div>
+    </ScrollAnimationBox>
   )
 }
 

@@ -19,7 +19,7 @@ const Banner2 = () => {
             duration: 0.5,
             easings: ['easeIn', 'easeOut'], // smoother easing
           }}
-          viewport={{ amount: 0.3 }}
+          viewport={{ amount: 0.6, once: true }}
           className={style.title}>
             Enhance your business with the most advanced technological solutions
             available.
@@ -31,7 +31,7 @@ const Banner2 = () => {
             duration: 0.5,
             easings: ['easeIn', 'easeOut'], // smoother easing
           }}
-          viewport={{ amount: 0.3 }}
+          viewport={{ amount: 0.6, once: true }}
           className={style.des}>
             8+ years of building digital products and we are just getting
             started
@@ -54,7 +54,7 @@ const Banner2 = () => {
               duration: 0.5,
               easings: ['easeIn', 'easeOut'], // smoother easing
             }}
-            viewport={{ amount: 0.3 }}
+            viewport={{ amount: 0.6, once: true }}
             >
             <Image
               src="/assets/images/man.webp"

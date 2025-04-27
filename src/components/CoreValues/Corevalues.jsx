@@ -14,7 +14,7 @@ const Corevalues = () => {
           duration: 0.5,
           easings: ['easeIn', 'easeOut'], // smoother easing
         }}
-        viewport={{ amount: 0.5 }}
+        viewport={{ amount: 0.5, once: true }}
         >Our <span>Core</span> Values</motion.p>
       </div>
       <div className={style.bottom}>

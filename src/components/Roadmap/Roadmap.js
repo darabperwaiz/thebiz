@@ -1,12 +1,22 @@
+
 import React from 'react'
 import style from './roadmap.module.css'
 import Image from "next/image"
 import HoverIcon from "./HoverIcon/HoverIcon"
 // import { MdFlight } from "react-icons/md"
+import { motion } from "framer-motion"
 
 const Roadmap = ({data}) => {
   return (
-    <div className={style.roadmap}>
+    <motion.div className={style.roadmap}
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{
+      duration: 0.5,
+      easings: ['easeIn', 'easeOut'], // smoother easing
+    }}
+    viewport={{ amount: 0.6, once: true }}
+    >
       <div className={style.title}>
         <p>Development</p>
         <p>Roadmap</p>
@@ -19,7 +29,7 @@ const Roadmap = ({data}) => {
               </div>
             ))}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
