@@ -61,8 +61,8 @@ const Seo = () => {
       <section className={style.seo}>
         <div className="container">
             <ServiceHeaderWrapper 
-            Head={<>Comprehensive Digital Marketing Services to Dominate Search Results!</>} 
-            Des={<>Boost your online presence with our expert SEO services. Improve your website&apos;s visibility, drive  more customer traffic, and dominate search engine rankings let&apos;s make your business shine in the  digital landscape</>}
+            Head={<>Comprehensive <span>Digital Marketing</span> Services to Dominate Search Results!</>} 
+            Des={<></>}
             pointer={['Ecom. SEO', 'Local SEO', 'National SEO']}
             >
                 <div className={style.seoBottom}>
@@ -76,7 +76,7 @@ const Seo = () => {
         <div className="container">
             <Benefits 
             tag="Benefits" 
-            title={<>SEO service that meets your marketing needs!</>} 
+            title={<>SEO service that meets your <span>marketing</span> needs!</>} 
             des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis,in depth keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
             >
                 <div className="imgflex">

@@ -59,10 +59,10 @@ const WebsiteMaintanence = () => {
           <ServiceHeaderWrapper
             Head={
               <>
-                Annual maintenance service to Keep Your Website Fast, Secure & Always Up-to-Date!
+                Annual <span>maintenance</span> service to Keep Your Website Fast, Secure & Always Up-to-Date!
               </>
             }
-            Des={`Boost your online presence with our expert SEO services. Improve your website's visibility, drive  more customer traffic, and dominate search engine rankings let’s make your business shine in the  digital landscape`}
+            Des={``}
             pointer={['Performance tracking', 'Regular plugin updates', 'Always up & running']}
           >
             <div className="imgflex">

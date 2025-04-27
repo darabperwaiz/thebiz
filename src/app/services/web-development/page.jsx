@@ -61,10 +61,10 @@ const WebsiteDevelopment = () => {
           <ServiceHeaderWrapper
             Head={
               <>
-                Custom website development service in Texas!
+                Custom <span>website</span> development service in Texas!
               </>
             }
-            Des={`Our expert team meticulously crafts tailored websites that embody your brand's essence and drive unparalleled user engagement. From sleek designs to seamless functionality, we ensure every aspect of your site reflects excellence. Whether you're launching a start-up or expanding your digital footprint, we're committed to delivering solutions that exceed expectations.`}
+            Des={``}
             pointer={['Business Websites', 'E-commerce', 'Web Apps']}
           >
             <div className="imgflex">
@@ -77,7 +77,7 @@ const WebsiteDevelopment = () => {
         <div className="container">
           <Benefits
           tag="Benefits" 
-          title={<>Website development service that reflects your business identity!</>} 
+          title={<>Website <span>development</span> service that reflects your business identity!</>} 
           des="A well-designed website is a powerful asset for any industry, enhancing brand credibility, customer engagement, and sales growth. By ensuring a seamless user experience with intuitive navigation, fast loading speeds, and mobile responsiveness, businesses can attract and retain customers more effectively. Optimized for SEO and integrated with automation and analytics, a website improves visibility, streamlines operations, and drives data-driven decisions, ultimately maximizing profitability and long-term success."
           >
           <div className="imgflex">

@@ -76,7 +76,7 @@ const Porfolios = ({ limit = 6 }) => {
            duration: 0.5,
            easings: ['easeIn', 'easeOut'], // smoother easing
          }}
-         viewport={{ amount: 0.6, once: true }}
+         viewport={{ amount: 0.2, once: true }}
         className={style.mid}>
           {projects.map(
             (t, i) =>
@@ -86,7 +86,7 @@ const Porfolios = ({ limit = 6 }) => {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}
-                  transition={{duration: 0.7 }}
+                  transition={{duration: 0.5 }}
                   className={`${style.gridItem} item${i}`}
                 
                 >

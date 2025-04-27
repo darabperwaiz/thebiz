@@ -10,6 +10,7 @@ import Image from "next/image"
 import Outcome from "@/components/outcome/Outcome"
 import { appRoad } from "./appRoadMap"
 import Roadmap from "@/components/Roadmap/Roadmap"
+import Motion from "@/components/Motion/Motion"
 
 export const metadata = {
     title: "App Development | Thebiztechnology",
@@ -59,7 +60,7 @@ const AppDevelopment = () => {
         <div className="container">
             <ServiceHeaderWrapper
             Head={<>Custom Mobile <span>App</span> development service in Texas!</>}
-            Des={`Boost your online presence with our expert SEO services. Improve your website's visibility, drive  more customer traffic, and dominate search engine rankings let’s make your business shine in the  digital landscape`}
+            Des={``}
             pointer={['Boost Engagement', 'Streamline Operations', 'Increase Sales']}
             >
                 <div className="imgflex">
@@ -72,15 +73,17 @@ const AppDevelopment = () => {
         <div className="container">
             <Benefits
             tag="Benefits" 
-            title={<>Application development service tailored to your business needs!</>} 
+            title={<>Application <span>development service</span> tailored to your business needs!</>} 
             des="Delivering excellence in mobile application development, our services are your gateway to engaging, user-centric apps. We specialize in crafting bespoke solutions for iOS and Android platforms, tailored to your unique vision and business objectives. From concept to deployment, our experienced team ensures seamless functionality, captivating design, and intuitive user experiences. Whether you're venturing into the app world or seeking to elevate your existing presence, we're your trusted partner every step of the way. With our commitment to quality and innovation, rest assured your mobile app will stand out in today's competitive landscape. Experience the difference with our comprehensive mobile application services."
-            >
+            >            
                 <div className="imgflex">
                     <Image src="/assets/images/tab_dashboard.svg" alt="" width={300} height={300}/>
                 </div>
             </Benefits>
             <div>
+              <Motion>
                 <p className={style.text}>Our <span>Portfolio</span></p>
+                </Motion>
                 <Porfolios limit={6}/>
             </div>
             <Outcome data={data} />

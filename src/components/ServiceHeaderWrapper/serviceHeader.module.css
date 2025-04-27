@@ -24,7 +24,7 @@
     font-weight: 300;
     text-transform: capitalize;
     color: var(--primary-color);
-    line-height: 90%;
+    line-height: 130%;
 }
 
 .title>span:nth-child(1) {
@@ -63,24 +63,24 @@
 
 .links {
     display: flex;
-    gap: 24px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .linksFlex {
     display: flex;
-    width: 100%;
-    gap: 11px;
+    gap: 5px;
     align-items: center;
 }
 
 .linksFlex>img {
-    width: 20px;
-    height: 15px;
+    width: 16px;
+    height: 12px;
 }
 
 .linksFlex>p {
     color: var(--primary-color);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 25px;
     width: max-content;

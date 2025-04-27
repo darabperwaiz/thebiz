@@ -18,7 +18,7 @@ const OurPortfolio = () => {
               duration: 0.5,
               easings: ['easeIn', 'easeOut'], // smoother easing
             }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.3 }}
             className={style.head}>Our <span>Portfolio</span></motion.p>
         </div>
       </div>

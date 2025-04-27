@@ -69,10 +69,7 @@ const Smo = () => {
             }
             Des={
               <>
-                Boost your online presence with our expert SEO services. Improve
-                your website&apos;s visibility, drive more customer traffic, and
-                dominate search engine rankings let’s make your business shine
-                in the digital landscape
+                
               </>
             }
             pointer={['Boost Visibility', 'Drive Traffic', 'Dominate Rankings']}

@@ -60,7 +60,7 @@ const Crm = () => {
           <ServiceHeaderWrapper
             Head={
               <>
-                Customer Relationship Management tools for business automation in Texas!
+                Customer Relationship <span>Management tools</span> for business automation in Texas!
               </>
             }
             Des={``}
@@ -82,7 +82,7 @@ const Crm = () => {
         <div className="container">
           <Benefits
           tag="Benefits" 
-          title={<>CRM development service tailored to your business needs!</>} 
+          title={<>CRM <span>development service</span> tailored to your business needs!</>} 
           des="Our CRM development services streamline operations, enhance customer relationships, and drives growth. We evaluate your processes, create tailored solutions, and ensure seamless integration. With advanced technology and user-friendly design, our scalable CRM systems boost productivity, automate workflows, and provide actionable insights. Designed to meet your unique needs, our solutions empower your business to thrive in a competitive market. Transform customer interactions and achieve long-term success with our expert CRM development services."
           >
             <div className="imgflex">

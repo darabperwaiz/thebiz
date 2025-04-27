@@ -19,14 +19,15 @@ const LinkBuilding = () => {
     <>
       <LinkBHeader 
       title={<>Our Link Building services are the <span>cornerstone</span> of your website&apos;s authority and <span>online success.</span></>}
-      description={`Boost your online presence with our expert SEO services. Improve your website's visibility, drive  more customer traffic, and dominate search engine rankings let’s make your business shine in the  digital landscape`}
+      description={``}
+      pointer={['High-Quality Backlinks', 'Contextual Backlinks', 'Traditional Backlinks']}
       />
       <section className={style.bottom}>
         <div className="container">
             <Benefits
             tag="Benefits" 
-            title={<>SEO service that meets your marketing needs!</>} 
-            des="Our SEO services are crafted to enhance your online visibility and generate measurable outcomes. Our process starts with a thorough assessment to pinpoint areas for enhancement, followed by developing a customized strategy to coincide with your business objectives. By conducting detailed analysis, keyword research and optimizing on-page content, we guarantee that your material will achieve top rankings on search engines and draw in the appropriate"
+            title={<>High-Authority <span>Link Building</span> Services That Supercharge Traffic, Authority & Rankings!</>} 
+            des="Strengthen your online presence with our premium link building services designed to deliver real SEO results. We focus on acquiring high-quality, relevant backlinks that not only drive targeted traffic but also enhance your domain and page authority. Our strategic outreach and white-hat techniques ensure your site earns credible links from authoritative sources boosting engagement, trust, and search engine rankings. Whether you're aiming to dominate your niche or climb the SERPs, our customized link building solutions are built to elevate your brand and generate long-term growth."
             >
                 <div className="imgflex">
                     <Image src="/assets/images/tab_dashboard.svg" alt="" width={300} height={300}/>
