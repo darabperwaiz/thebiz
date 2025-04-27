@@ -2,13 +2,13 @@
   background: url('/assets/images/vector.svg');
   padding: 50px 0;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right;
   animation: bounce 5s ease-in-out alternate infinite;
 }
 
 @keyframes bounce {
   from {
-    background-position: right top;
+    background-position: right;
   }
   to {
     background-position: right 10%;

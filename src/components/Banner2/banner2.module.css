@@ -43,14 +43,16 @@
 }
 
 .imgBox {
-  /* background-color: yellow; */
-  overflow: hidden;
-  height: 100%;
-  position: absolute;
+    overflow: hidden;
+    height: calc(100% + 30px);
+    position: absolute;
+    margin-top: -30px;
 }
 
 .imgBox img {
   width: 280px;
+  height: 100%;
+  aspect-ratio: 2 / 3;
 }
 
 .google {
@@ -71,7 +73,7 @@
   width: 215px;
   height: 180px;
   position: absolute;
-  right: 20%;
+  left: 44%;
   top: 3%;
 }
 
@@ -84,8 +86,7 @@
   }
   .imgBox {
     position: relative;
-    background-color: #FBFBFB;
-    width: 300px;
+    /* width: 300px; */
     display: flex;
     justify-content: center;
     border-bottom-left-radius: 78px;
@@ -102,7 +103,7 @@
   }
 
   .halfCircle {
-    right: 27%;
+    left: 40%;
     top: 0%;
     transform: rotate(341deg);
   }
