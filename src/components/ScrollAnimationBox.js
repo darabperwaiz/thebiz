@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 const ScrollAnimationBox = ({ children, delay = 0 }) => {
   const ref = useRef(null);
-  const inView = useInView(ref, { threshold: 0.8, once: true }); // 60% visible
+  const inView = useInView(ref, { threshold: 0.5, once: true }); // 60% visible
   const controls = useAnimation();
 
   useEffect(() => {

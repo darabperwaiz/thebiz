@@ -25,22 +25,12 @@ const AboutUs = () => {
         <div className="container">
           <div className={style.wrapper}>
             <div className={style.head}>
-              <Motion
-              initial={{opacity: 0, x: 100}}
-              whileInView={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: -100}}
-              transition={{duration: 0.9}}
-              >
+              <Motion>
               <p className={style.title}>
               Connecting Business with Smart Technology.
               </p>
               </Motion>
-              <Motion
-              initial={{opacity: 0, x: -100}}
-              whileInView={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: 100}}
-              transition={{duration: 0.9}}
-              >
+              <Motion>
               <p className={style.des}>
                 your trusted partner for internet marketing and website
                 services. Specializing in delivering tailored solutions, we
@@ -49,7 +39,9 @@ const AboutUs = () => {
               </p>
               </Motion>
             </div>
+            <Motion>
             <TrustedBrands />
+            </Motion>
             <PrimaryButton text={"Let's talk with me"} />
           </div>
         </div>
@@ -57,12 +49,7 @@ const AboutUs = () => {
       <section>
         <div className="container">
           <div className={style.top}>
-            <Motion
-            initial={{opacity: 0, x: -100}}
-            whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: 100}}
-            transition={{duration: 0.9}}
-            >
+            <Motion>
             <div className={style.topLeft}>
               <p className={style.topLefttitle}>
                 <span>Our Journey!</span>
@@ -74,12 +61,7 @@ const AboutUs = () => {
             </div>
             </Motion>
             <div className={style.topRight}>
-              <Motion
-              initial={{opacity: 0, y: 100}}
-              whileInView={{opacity: 1, y: 0}}
-              exit={{opacity: 0, y: 100}}
-              transition={{duration: 0.9}}
-              >
+              <Motion>
               <div className={style.topRightLeft}>
                 <div className={style.imageWrapper}>
                   <Image
@@ -102,12 +84,7 @@ const AboutUs = () => {
                 </div>
               </div>
               </Motion>
-              <Motion
-              initial={{opacity: 0, y: -100}}
-              whileInView={{opacity: 1, y: 0}}
-              exit={{opacity: 0, y: -100}}
-              transition={{duration: 0.9}}
-              >
+              <Motion>
               <div className={style.topRightMid}>
                 <div className={style.imageWrapper}>
                   <Image
@@ -131,12 +108,7 @@ const AboutUs = () => {
                 </div>
               </div>
               </Motion>
-              <Motion
-              initial={{opacity: 0, x: 100}}
-              whileInView={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: -100}}
-              transition={{duration: 0.9}}
-              >
+              <Motion>
               <div className={style.topRightRight}>
                 <div className={style.imageWrapper}>
                   <Image
@@ -153,12 +125,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className={style.mid}>
-            <Motion
-            initial={{opacity: 0, x: -100}}
-            whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -100}}
-            transition={{duration: 0.9}}
-            >
+            <Motion>
             <div className={style.midLeft}>
               <Image
                 src="/assets/images/group_of_people.webp"
@@ -170,12 +137,7 @@ const AboutUs = () => {
               />
             </div>
             </Motion>
-            <Motion
-            initial={{opacity: 0, x: 100}}
-            whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: 100}}
-            transition={{duration: 0.9}}
-            >
+            <Motion>
             <div className={style.midRight}>
               <p className={style.midRightTitle}>
                 <span>Our success story!</span>
@@ -188,24 +150,14 @@ const AboutUs = () => {
             </Motion>
           </div>
           <div className={style.bottom}>
-            <Motion
-            initial={{opacity: 0, y: -100}}
-            whileInView={{opacity: 1, y: 0}}
-            exit={{opacity: 0, y: -100}}
-            transition={{duration: 0.9}}
-            >
+            <Motion>
             <div className={style.bottomLeft}>
               <p className={style.bottomTitle}>
                 <span>Core concepts!</span>
               </p>
             </div>
             </Motion>
-            <Motion
-            initial={{opacity: 0, x: -100}}
-            whileInView={{opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -100}}
-            transition={{duration: 0.9}}
-            >
+            <Motion>
             <div className={style.bottomRight}>
               <div className={style.bottomRightBox}>
                 <FaCloudUploadAlt style={{color: 'var(--secondry-button-color)',marginTop: '6px', minWidth: '20px'}}/>
