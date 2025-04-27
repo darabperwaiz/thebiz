@@ -31,7 +31,11 @@ export const menuItemsData = [
             {
               title: 'Website Annual Maintenance',
               url: 'website-annual-maintenance'
-            }    
+            },
+            {
+              title: 'CRM',
+              url: 'crm'
+            },   
     
           ]
         },
@@ -49,10 +53,6 @@ export const menuItemsData = [
             {
               title: "Google my business",
               url: "gmb",
-            },
-            {
-              title: 'CRM',
-              url: 'crm'
             },
             {
               title: 'Content Writing',

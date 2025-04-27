@@ -21,7 +21,7 @@ const Footer = () => {
             <div
             
             className={style.logo}>
-              <Image src="/assets/images/logo.webp" width={126} height={88} alt="" />
+              <Image src="/assets/images/logo.png" width={126} height={88} alt="" />
             </div>
             <p
             className={style.paragraph}>

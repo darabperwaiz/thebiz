@@ -5,7 +5,7 @@ import Image from "next/image"
 const Logo = () => {
   return (
     <div className={style.logo}>
-      <Image src="/assets/images/logo.webp" width={126} height={88} alt=""/>
+      <Image src="/assets/images/logo.png" width={400} height={400} alt="" quality={100} priority unoptimized/>
     </div>
   )
 }

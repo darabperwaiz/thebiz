@@ -8,9 +8,27 @@
     font-size: 16px;
     font-weight: 500;
     width: 100%;
+    position: relative;
+    padding-bottom: 5px;
 }
 
 .menuItems:hover {
     color: #2D46BE;
     /* gap: 5px; */
+}
+
+.menuItems::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #2D46BE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.menuItems:hover.menuItems::after {
+    width: 100%;
 }

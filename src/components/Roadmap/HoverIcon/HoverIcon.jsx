@@ -6,6 +6,7 @@ const HoverIcon = ({p1, p2, icon, bgColor}) => {
   return (
     <div className={style.hoverIcon}>
       <p>{p1}</p>
+      <div className={style.lineWrapper}>
       <div className={style.verticleLine}></div>
       <div className={style.circle}>
         <div className={style.innerCircle} style={{backgroundColor: `${bgColor}`}}>
@@ -17,6 +18,7 @@ const HoverIcon = ({p1, p2, icon, bgColor}) => {
             height={200}
           />
         </div>
+      </div>
       </div>
       <p>{p2}</p>
     </div>

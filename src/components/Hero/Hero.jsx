@@ -18,7 +18,7 @@ const Hero = () => {
         viewport={{ once: true, amount: 0.3 }}
         >
           <div className={style.header}>
-          <h1>Best <span>web design </span> agency, <br /> and <span>digital marketing</span> service for your business growth!</h1>
+          <h1>Best web design agency, <br /> and digital marketing service for your business growth!</h1>
           {/* <h2>CRAFT YOUR DIGITAL JOURNEY THE WAY YOU IMAGINE</h2> */}
           <p className={style.tagline}>&quot;<span>Accelerate Your Online Growth,</span> Get Your Website & Marketing Consultation Today!&quot;</p>
           </div>

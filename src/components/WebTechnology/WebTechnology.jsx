@@ -6,6 +6,7 @@ import { webTechData } from "./webTechData"
 import { LearnMoreBtn } from "../learnMoreBtn/LearnMoreBtn"
 import Image from "next/image"
 import { AnimatePresence, motion } from "framer-motion"
+import ScrollAnimationBox from "../ScrollAnimationBox"
 
 
 const WebTechnology = () => {
@@ -17,36 +18,24 @@ const WebTechnology = () => {
     }
 
   return (
-    <AnimatePresence mode="wait">
+    <>
     <div className={style.technology}>
+    <ScrollAnimationBox>
       <div className={style.top}>
-        <motion.p
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.5,
-          easings: ['easeIn', 'easeOut'], // smoother easing
-        }}
-        viewport={{ amount: 0.8 }}
-        
-        ><b>Web</b> Technology</motion.p>
+        <p><b>Web</b> Technology</p>
       </div>
+      </ScrollAnimationBox>
+      <ScrollAnimationBox>
       <div className={style.bottom}>
         <div className={style.left}>
-            <motion.ul className={style.items}>
+            <ul className={style.items}>
                 {webTechData.map((item, index)=> (
-                    <motion.li
+                    <li
                     key={index}
-                    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{
-      duration: 0.5,
-      easings: ['easeIn', 'easeOut'], // smoother easing
-    }}
-    viewport={{ amount: 0.8 }}
-                    className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} onClick={()=> handleClick(item, index)} >{item.tag}</motion.li>
+                    
+                    className={item.id === singleData.id ? `${style.item} ${style.active}` : style.item} onClick={()=> handleClick(item, index)} >{item.tag}</li>
                 ))}
-            </motion.ul>
+            </ul>
         </div>
         <motion.div 
         key={singleData.id}
@@ -62,8 +51,9 @@ const WebTechnology = () => {
              </div>
         </motion.div>
       </div>
+      </ScrollAnimationBox>
     </div>
-    </AnimatePresence>
+    </>
   )
 }
 
