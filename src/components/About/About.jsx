@@ -29,7 +29,7 @@ const About = () => {
         className={style.left}>
             <Image src="/assets/images/about-section.webp" alt="" width={500} height={600}/>
             <div className={style.hoverImg}>
-            <Image src="/assets/images/logo.webp" width={100} height={100} alt="" />
+            <Image src="/assets/images/logo.png" width={100} height={100} alt="" />
             </div>
         </motion.div>
         <motion.div
