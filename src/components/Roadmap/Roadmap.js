@@ -8,15 +8,7 @@ import { motion } from "framer-motion"
 
 const Roadmap = ({data}) => {
   return (
-    <motion.div className={style.roadmap}
-    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{
-      duration: 0.5,
-      easings: ['easeIn', 'easeOut'], // smoother easing
-    }}
-    viewport={{ amount: 0.6, once: true }}
-    >
+    <div className={style.roadmap}>
       <div className={style.title}>
         <p>Development</p>
         <p>Roadmap</p>
@@ -29,7 +21,7 @@ const Roadmap = ({data}) => {
               </div>
             ))}
       </div>
-    </motion.div>
+    </div>
   )
 }
 
