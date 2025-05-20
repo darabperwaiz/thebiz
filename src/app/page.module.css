@@ -33,10 +33,10 @@
 }
 
 .corevalue {
-  /* background: url('/assets/images/vector.svg');
+  background: url('/assets/images/vector.svg');
   padding: 50px 0;
   background-repeat: no-repeat;
-  background-position: right 250px; */
+  background-position: right top 0;
   margin: 48px 0;
 }
 
