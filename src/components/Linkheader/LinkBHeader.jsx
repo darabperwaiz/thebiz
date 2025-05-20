@@ -26,10 +26,6 @@ const LinkBHeader = ({title, description, pointer}) => {
         <PrimaryButton text={`Let's talk with me`} />
       </div>
         </div>
-        {/* <div className={style.cornerImage}>
-            <Image src="/assets/images/corner.svg" alt="" width={500} height={500}/>
-            <div className={style.rectangle}></div>
-        </div> */}
     </section>
   )
 }
