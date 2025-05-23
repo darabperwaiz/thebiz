@@ -39,7 +39,7 @@
     left: -50px;
     width: 146.243px;
     height: 146.243px;
-    filter: drop-shadow(-4px 4px 54px rgba(0, 0, 0, 0.10));
+    filter: drop-shadow(-4px 4px 15px rgba(0, 0, 0, 0.2));
     border-radius: 50%;
     display: flex;
     justify-content: center;
