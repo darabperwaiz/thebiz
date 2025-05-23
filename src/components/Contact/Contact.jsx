@@ -63,10 +63,11 @@ const Contact = () => {
           <p>More About you</p>
           <p>Fill out the contact form and we&apos;ll get in touch with you shortly.</p>
         </div>
-        <form action="" className="scheduleForm">
-          <input className={style.input} type="text" placeholder="Your Name"/>
-          <input className={style.input} type="text" placeholder="Your Phone"/>
-          <input className={style.input} type="text" placeholder="Your Email Address"/>
+        <form className="scheduleForm">
+          <input className={style.input} name="name" type="text" placeholder="Full Name"/>
+          <input className={style.input} name="phone" type="text" placeholder="Phone No."/>
+          <input className={style.input} name="email" type="text" placeholder="Email Address"/>
+          <input className={style.input} name="website" type="text" placeholder="Webiste Link"/>
           <select value={'DEFAULT'} onChange={(e)=> e.target.value} className={style.input} name="services" id="">
             <option value="">Select A Services</option>
             <option value="seo">SEO</option>
