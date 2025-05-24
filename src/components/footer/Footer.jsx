@@ -18,8 +18,7 @@ const Footer = () => {
           <ScrollAnimationBox delay={0.5}>
         <div className={style.footerWrapper}>
           <div className={style.left}>
-            <div
-            
+            <div 
             className={style.logo}>
               <Image src="/assets/images/logo.png" width={126} height={88} alt="" />
             </div>
